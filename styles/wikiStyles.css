@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Myriad-Pro';
+  src: url('../fonts/myriadpro-bold.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('../fonts/myriadpro-bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+/*****------------------------------*** GENERAL STYLING ***------------------------------*****/
+html, body {
+    border: 0;
+    padding: 0;
+}
+  
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/*****------------------------------*** NAV BAR ***------------------------------*****/
+
+#navbar {
+    background-color: rgba(255,255,255,0.90);
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0; /*B/c width:100% makes nav bar stretch over screen width*/
+    overflow: hidden;
+    z-index: 20;
+    box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.08);
+    border-bottom: 0.1px solid rgb(230,230,230);
+    
+    font-size: 0.6em;
+    font-family: 'Myriad-Pro';
+}
+
+.main {
+    margin-top: 70px; /* Add a top margin to avoid content overlay */
+}
+
+.empty {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#navbar ul {
+	padding: 5px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    list-style-type: none;
+}
+
+#navbar li {
+	color: white;
+	display: inline;
+    padding-right: 20px;
+    margin: 0;
+}
+
+#navbar a:hover {
+    color: rgb(156,91,87); /*Brick red*/
+    transition: 0.3s;
+    text-decoration: none;
+}
