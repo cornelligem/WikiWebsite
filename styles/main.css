@@ -2598,6 +2598,7 @@ nav:after {
     -webkit-animation: fadeIn 0.7s;
             animation: fadeIn 0.7s;
   }
+    
   .nav-main-menu:not(.left-menu) > .sub-menu:hover > ul {
     display: block;
     -webkit-animation: fadeIn 0.7s;
