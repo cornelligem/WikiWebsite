@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600');
+
 /* TABLE CONTENT */
 /* 1.Component */
 /* ____Typography */
@@ -4459,9 +4461,8 @@ header.site-header {
   position: relative;
 }
 .home-boxed-slider.style-1 .item-image .caption-wrapper img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .home-boxed-slider.style-1 .item-image .caption-wrapper p {
   margin-bottom: 0;
@@ -4969,17 +4970,32 @@ header.site-header {
 }
 .home-fw-slider.style-2 .item-image .caption-wrapper img {
   margin-bottom: 30px;
-  margin-left: auto;
+  /*margin-left: auto; Wiki - uncommented to put logo on slideshow to left*/
   margin-right: auto;
-  width: 150px;
+  width: 300px;
 }
 .home-fw-slider.style-2 .item-image .caption-wrapper p {
-  font-size: 18px;
+  font-size: 30px;
   letter-spacing: 3px;
   line-height: 1.6;
   margin-bottom: 0;
-  font-family: 'Playfair Display', serif;
+  color: black;
+  font-weight: 400;
+  font-family: 'Crimson Text', serif;
 }
+
+/**********----------- Wiki - Begin: SLIDE SHOW STYLING -----------**********/
+.home-fw-slider.style-2 .item-image .caption-wrapper .titleSlide {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.boldSlideText {
+    font-weight: 600;
+}
+
+/**********----------- Wiki - End: SLIDE SHOW STYLING -----------**********/
+
 .home-fw-slider.style-2 .item-image .heading-icon-1 {
   -webkit-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
