@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Source+Sans+Pro:400,600,700');
 
 /**********-----------Wiki - SLIDE SHOW-----------**********/
 .home-fw-slider.style-2 .item-image .caption-wrapper .titleSlide {
@@ -12,9 +12,9 @@
 
 /**********-----------Wiki - END SLIDE SHOW-----------**********/
 
-/**********-----------Wiki - TITLE DESCRIPTION-----------**********/
+/**********-----------Wiki - TITLE DESCRIPTION & TILES -----------**********/
 .igemLogo {
-    width: 50%;
+    width: 30%;
 }
 
 .igemLogoSubtitle {
@@ -25,7 +25,51 @@
     color: #070707;
     margin-top: 15px;
 }
-/**********-----------Wiki - END TITLE DESCRIPTION-----------**********/
+
+.tilesWrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+}
+.tile {
+    position: relative;
+}
+
+.tile:hover .tileTitle {
+    color: rgb(0,0,0);
+}
+
+.tile:hover .tileSubtitle {
+    color: rgb(25,25,25);
+}
+
+.tileTitleWrapper {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    z-index: 520; /*Set so title div is in front of overlay (z index of 512)*/
+}
+
+.tileTitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(30,30,30);
+}
+
+.tileSubtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(50,50,50);
+}
+
+/**********-----------Wiki - END TITLE DESCRIPTION & TILES-----------**********/
 
 /* TABLE CONTENT */
 /* 1.Component */
@@ -923,10 +967,10 @@ html {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .ex-layout .row {
+ /* .ex-layout .row {
     margin-left: -20px;
     margin-right: -20px;
-  }
+  }*/
 }
 .remove-col-padding [class*='col-'] {
   padding-left: 0;
