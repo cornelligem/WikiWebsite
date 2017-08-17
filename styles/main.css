@@ -71,6 +71,26 @@
 
 /**********-----------Wiki - END TITLE DESCRIPTION & TILES-----------**********/
 
+/**********-----------Wiki - FOOTER-----------**********/
+
+.footerTitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-preset-04 .igemLogo {
+    width: 10%;
+}
+
+.footerIconWrapper {
+    position: relative;
+}
+.footer-preset-04 .footerIconWrapper:hover .overlay {
+  background-color: rgba(255,255,255,0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+/**********-----------Wiki - END FOOTER-----------**********/
 /* TABLE CONTENT */
 /* 1.Component */
 /* ____Typography */
@@ -10658,7 +10678,7 @@ footer:after {
   color: #999999;
 }
 .footer-preset-04 {
-  padding: 60px 0;
+  padding: 30px 0;
   text-align: center;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
@@ -10667,9 +10687,10 @@ footer:after {
   letter-spacing: 3px;
   font-family: 'Playfair Display', serif;
 }
-.footer-preset-04 .social-04 {
+/*.footer-preset-04 .social-04 {
   padding-bottom: 50px;
 }
+*/
 .footer-preset-04 .social-04 a {
   margin-right: 12px;
   margin-left: 12px;
