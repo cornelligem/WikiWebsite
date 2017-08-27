@@ -11,6 +11,40 @@
   font-style: normal;
 
 }
+@font-face {
+  font-family: "Montserrat";
+  src:url("../fonts/montserrat-regular-webfont.eot");
+  src:url("../fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/montserrat-regular-webfont.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+    url("fonts/montserrat.svg#montserrat") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: "Crimson Text";
+  src:url("../fonts/crimson-text-regular.eot");
+  src:url("../fonts/crimson-text-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/crimson-text-regular.woff") format("woff"),
+    url("../fonts/CrimsonText-Regular.ttf") format("truetype"),
+    url("fonts/crimson-text.svg#montserrat") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src:url("../fonts/SourceSansVariable-Roman.otf");
+  src:
+    
+    url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
 
 [data-icon]:before {
   font-family: "wolverine" !important;
