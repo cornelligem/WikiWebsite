@@ -5,6 +5,26 @@
   margin: 0;
 }
 
+ /********************************* WIKI RESET  ********************************/
+ 
+#sideMenu, #top_title {
+    display:none;
+}
+#content { 
+    padding:0px; 
+    width:100% !important;
+    margin-top:-26px; 
+    margin-left:0px ;
+    font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+}
+body {
+    background-color: black;
+    font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important; 
+}
+#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { 
+    font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important; 
+}
+
 /**********-----------Wiki - SLIDE SHOW-----------**********/
 .home-fw-slider.style-2 .item-image .caption-wrapper .titleSlide {
     font-size: 30px;
