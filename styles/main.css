@@ -193,55 +193,6 @@ body {
   color: #000000;
 }
 
-/*new code*/
-/*.bio-wrapper {
-  display: table;
-  margin-bottom: 25px;
-}
-
-.bio-image-wrapper, .bio-info-wrapper {
-  display: table-cell;
-  vertical-align: top;
-}
-
-.bio-image-wrapper {
-  position: relative;
-}
-
-.bio-image {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-.bio-wrapper .bio-info-wrapper {
-  padding: 50px;
-  background-color: #fafafa;
-  font-family: 'Crimson Text', serif;
-}
-
-.bio-wrapper .bio-info-wrapper .bio-title {
-  margin-bottom: 0;
-  font-size: 36px;
-  font-weight: bold;
-  color: #000000;
-  line-height: normal;
-}
-
-.bio-wrapper .bio-info-wrapper .bio-subtitle {
-  font-size: 24px;
-  font-weight: bold;
-  color: #808080;
-}
-
-.bio-wrapper .bio-info-wrapper .bio-body {
-  margin-bottom: 0;
-  font-size: 16px;
-  color: #a9a9a9;
-  line-height: normal;
-}*/
-
-/*old code*/
 .bio-wrapper {
   margin-bottom: 25px;
 }
@@ -277,6 +228,41 @@ body {
   line-height: normal;
 }
 /**********-----------Wiki - END BIOS-----------**********/
+
+/**********-----------Wiki - SPONSORS-----------**********/
+.sponsors {
+  font-family: 'Crimson Text', serif;
+}
+
+.sponsors-title {
+  margin: 100px 0;
+  text-align: center;
+  font-size: 65px;
+}
+
+.sponsor-wrapper {
+  margin-bottom: 50px;
+}
+
+.sponsor-sqr-circ-icon {
+  height: 200px;
+  width: auto;
+}
+
+.sponsor-icon {
+  width: 100%;
+}
+
+.sponsor-icon, .sponsor-sqr-circ-icon {
+  display: block;
+  margin: auto;
+}
+
+.sponsor-info-wrapper p {
+  font-size: 16px;
+  line-height: normal;
+}
+/**********-----------Wiki - END SPONSORS-----------**********/
 
 /**********-----------Wiki - FOOTER-----------**********/
 
