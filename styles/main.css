@@ -120,6 +120,7 @@ body {
 .tilesWrapper {
     margin-left: 10%;
     margin-right: 10%;
+    padding-top: 150px;
     width: auto;
 }
 .tile {
@@ -1273,7 +1274,6 @@ main:after {
 }
 section {
   position: relative;
-  padding-top: 150px;
   padding-bottom: 75px;
 }
 section:after {
