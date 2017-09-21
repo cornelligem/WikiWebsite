@@ -239,6 +239,33 @@ body {
 }
 /**********-----------Wiki - END BIOS-----------**********/
 
+
+/**********-----------Wiki - SAFETY-----------**********/
+.safetyContent{
+    padding:96px 0;
+    background-color:white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.safetyHeading{
+    letter-spacing:6px;
+    color:black;
+    padding-top:100px;
+}
+
+.safetySubheading{
+    letter-spacing:6px;
+    margin-bottom: 40px;
+}
+
+.safetyp{
+    color:black;
+    line-height: 40px;
+}
+/**********-----------Wiki - END SAFETY-----------**********/
+
+
 /**********-----------Wiki - SPONSORS-----------**********/
 .sponsors {
   font-family: 'Crimson Text', serif;
