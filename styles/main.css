@@ -117,10 +117,13 @@ body {
     margin-top: 15px;
 }
 
+.tiles-wrapper {
+  padding-top: 150px;
+}
+
 .tilesWrapper {
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 150px;
     width: auto;
 }
 .tile {
