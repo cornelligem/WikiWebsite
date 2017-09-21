@@ -36,15 +36,25 @@ body {
 }
 
 /**********-----------Wiki - END SLIDE SHOW-----------**********/
+
+/**********-----------Wiki - HOME DESCRIPTION-----------**********/
+
 .logo-description-wrapper {
   background: #ffffff;
 }
 
 .igemLogo {
   display: block;
-  margin: auto;
+  /*margin: auto;*/
   margin-bottom: 50px;
-  width: 30%;
+  width: 34%;
+}
+
+.logo-tagline {
+  margin-bottom: 15px;
+  font-family: 'Crimson Text', serif;
+  font-size: 25px;
+  color: #070707;
 }
 
 .logo-description {
@@ -52,9 +62,13 @@ body {
   font-size: 18px;
   color: #070707;
   margin-top: 0;
-  margin-bottom: 25px;
-  text-align: center;
+  margin-bottom: 17px;
+  text-align: left;
+  line-height: normal;
+  opacity: 0.7;
 }
+
+/**********-----------Wiki - END HOME DESCRIPTION-----------**********/
 
 /**********-----------Wiki - HOME BANNER -----------**********/
 .home-banner-wrapper {
@@ -88,17 +102,13 @@ body {
   font-family: 'Crimson Text', serif;
   font-size: 30px;
   font-weight: 400;
-  line-height: 55px;
+  line-height: 45px;
   color: #000000;
   left: 3%;
 }
 /**********-----------Wiki - END HOME BANNER-----------**********/
 
 /**********-----------Wiki - TITLE DESCRIPTION & TILES -----------**********/
-.igemLogo {
-    width: 30%;
-}
-
 .igemLogoSubtitle {
     font-family: 'Crimson Text', serif;
     font-size: 27px;
@@ -193,55 +203,6 @@ body {
   color: #000000;
 }
 
-/*new code*/
-/*.bio-wrapper {
-  display: table;
-  margin-bottom: 25px;
-}
-
-.bio-image-wrapper, .bio-info-wrapper {
-  display: table-cell;
-  vertical-align: top;
-}
-
-.bio-image-wrapper {
-  position: relative;
-}
-
-.bio-image {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-.bio-wrapper .bio-info-wrapper {
-  padding: 50px;
-  background-color: #fafafa;
-  font-family: 'Crimson Text', serif;
-}
-
-.bio-wrapper .bio-info-wrapper .bio-title {
-  margin-bottom: 0;
-  font-size: 36px;
-  font-weight: bold;
-  color: #000000;
-  line-height: normal;
-}
-
-.bio-wrapper .bio-info-wrapper .bio-subtitle {
-  font-size: 24px;
-  font-weight: bold;
-  color: #808080;
-}
-
-.bio-wrapper .bio-info-wrapper .bio-body {
-  margin-bottom: 0;
-  font-size: 16px;
-  color: #a9a9a9;
-  line-height: normal;
-}*/
-
-/*old code*/
 .bio-wrapper {
   margin-bottom: 25px;
 }
@@ -277,6 +238,68 @@ body {
   line-height: normal;
 }
 /**********-----------Wiki - END BIOS-----------**********/
+
+
+/**********-----------Wiki - SAFETY-----------**********/
+.safetyContent{
+    padding:96px 0;
+    background-color:white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.safetyHeading{
+    letter-spacing:6px;
+    color:black;
+    padding-top:100px;
+}
+
+.safetySubheading{
+    letter-spacing:6px;
+    margin-bottom: 40px;
+}
+
+.safetyp{
+    color:black;
+    line-height: 40px;
+}
+/**********-----------Wiki - END SAFETY-----------**********/
+
+
+/**********-----------Wiki - SPONSORS-----------**********/
+.sponsors {
+  font-family: 'Crimson Text', serif;
+}
+
+.sponsors-title {
+  margin: 100px 0;
+  text-align: center;
+  font-size: 65px;
+}
+
+.sponsor-wrapper {
+  margin-bottom: 50px;
+}
+
+.sponsor-sqr-circ-icon {
+  height: 200px;
+  width: auto;
+}
+
+.sponsor-icon {
+  width: 100%;
+}
+
+.sponsor-icon, .sponsor-sqr-circ-icon {
+  display: block;
+  margin: auto;
+}
+
+.sponsor-info-wrapper p {
+  font-size: 16px;
+  line-height: normal;
+}
+/**********-----------Wiki - END SPONSORS-----------**********/
 
 /**********-----------Wiki - FOOTER-----------**********/
 
@@ -1229,8 +1252,8 @@ main:after {
 }
 section {
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 35px;
+  /*padding-top: 75px;*/
+  padding-bottom: 75px;
 }
 section:after {
   clear: both;
