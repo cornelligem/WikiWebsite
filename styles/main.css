@@ -239,6 +239,54 @@ body {
 }
 /**********-----------Wiki - END BIOS-----------**********/
 
+
+/**********-----------Wiki - SAFETY-----------**********/
+.safetyContent{
+    padding:96px 0;
+    background-color:white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.safetyHeading{
+    letter-spacing:6px;
+    color:black;
+    padding-top:100px;
+}
+
+.safetySubheading{
+    letter-spacing:6px;
+    margin-bottom: 40px;
+}
+
+.safetyp{
+    color:black;
+    line-height: 40px;
+}
+/**********-----------Wiki - END SAFETY-----------**********/
+
+/**********-----------Wiki - ATTRIBUTIONS -----------**********/
+.attri-banner-wrapper {
+  margin-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.attri-banner-wrapper .attri-banner-caption {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  moz-transform: translateX(-50%) translateY(-50%);
+  webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 65px;
+  color: #000000;
+}
+
+
+/**********-----------Wiki - END ATTRIBUTIONS -----------**********/
+
 /**********-----------Wiki - SPONSORS-----------**********/
 .sponsors {
   font-family: 'Crimson Text', serif;
