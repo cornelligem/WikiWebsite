@@ -193,6 +193,19 @@ body {
   background-position: center center;
   background-size: cover;
 }
+
+.notebook-banner-caption {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  moz-transform: translateX(-50%) translateY(-50%);
+  webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 65px;
+  color: #000000;
+}
 /**********-----------Wiki - END NOTEBOOK-----------**********/
 
 /**********-----------Wiki - BIOS-----------**********/
@@ -214,7 +227,7 @@ body {
   background-size: cover;
 }
 
-.bios-banner-wrapper .bios-banner-caption-wrapper .bios-banner-caption {
+.bios-banner-caption {
   position: absolute;
   left: 50%;
   top: 45%;
