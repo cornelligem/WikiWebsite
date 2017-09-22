@@ -175,6 +175,26 @@ body {
 
 /**********-----------Wiki - END TITLE DESCRIPTION & TILES-----------**********/
 
+/**********-----------Wiki - NOTEBOOK-----------**********/
+.notebook-banner-wrapper {
+  margin-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.notebook-banner-wrapper .notebook-banner-caption-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: #edefee;
+  background-position: center center;
+  background-size: cover;
+}
+/**********-----------Wiki - END NOTEBOOK-----------**********/
+
 /**********-----------Wiki - BIOS-----------**********/
 .bios-banner-wrapper {
   margin-bottom: 100px;
