@@ -349,6 +349,53 @@ body {
 
 
 /**********-----------Wiki - END ATTRIBUTIONS -----------**********/
+/**********-----------Wiki - PROTOCOL -----------**********/
+.prot-banner-wrapper {
+    margin-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.prot-banner-wrapper .prot-banner-caption {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    moz-transform: translateX(-50%) translateY(-50%);
+    webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 65px;
+    color: #000000;
+}
+.prot-content-wrapper{
+    padding: 0px 200px 100px 200px;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    color: #000000;
+
+}
+.prot-content{
+    font-family: 'Source Sans Pro', serif;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+.prot-title{
+    font-family: 'Source Sans Pro', serif;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000;
+    line-height: normal;
+    
+}
+.prot-content a{
+    color:rgb(86,113,81);
+}
+
+
+/**********-----------Wiki - END PROTOCOL -----------**********/
+
 
 /**********-----------Wiki - SPONSORS-----------**********/
 .sponsors {
