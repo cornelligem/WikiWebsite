@@ -1,0 +1,51 @@
+/********************************* WIKI RESET  ********************************/
+
+#sideMenu, #top_title {
+    display:none;
+}
+#content {
+    padding:0px;
+    width:100% !important;
+    margin-top:-26px;
+    margin-left:0px ;
+    font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+}
+body {
+    background-color: #ffffff;
+    font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+}
+#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 {
+    font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+}
+
+/********************************* HEADER  ********************************/
+.practices-banner-wrapper {
+    margin-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.practices-banner-wrapper .practices-banner-caption-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: url("http://2017.igem.org/wiki/images/3/39/T--Cornell--Farm12.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.practices-banner-caption {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    moz-transform: translateX(-50%) translateY(-50%);
+    webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 65px;
+    color: #000000;
+}

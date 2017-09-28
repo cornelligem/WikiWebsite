@@ -175,6 +175,14 @@ body {
 
 /**********-----------Wiki - END TITLE DESCRIPTION & TILES-----------**********/
 
+/**********-----------Wiki - SIDE BAR-----------**********/
+.sidebar-wrapper {
+  font-family: 'Source Sans Pro', serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+/**********-----------Wiki - END SIDE BAR-----------**********/
+
 /**********-----------Wiki - NOTEBOOK-----------**********/
 .notebook-banner-wrapper {
     margin-bottom: 100px;
