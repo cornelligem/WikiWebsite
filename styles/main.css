@@ -84,7 +84,7 @@ body {
     top: 0;
     left: 0;
     overflow: hidden;
-    background: url("../images/cornellSlideshowSlide1.jpg");
+    background: url("http://2017.igem.org/wiki/images/7/71/T--Cornell--HomePageBanner.jpeg");
     background-position: center;
     background-size: cover;
 }
@@ -325,10 +325,10 @@ body {
     font-family: 'Crimson Text', serif;
     font-size: 16px;
     color: #000000;
-    
+
 }
 .attri-content{
-    
+
     font-family: 'Crimson Text', serif;
     font-size: 16px;
     color: #000000;
