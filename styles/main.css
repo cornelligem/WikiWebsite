@@ -483,7 +483,7 @@ body {
     font-weight: 400;
     line-height: 2.2;
     text-rendering: optimizeLegibility;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Crimson Text', sans-serif;
 }
 h1,
 h2,
@@ -709,7 +709,7 @@ p.nmb {
     background-color: #ffffff;
 }
 .bgc-gray {
-    background-color: #f4f4f4;
+    background-color: #f6f8fB;
 }
 .border-bottom {
     border-bottom: solid 1px #eeeeee;
@@ -9903,26 +9903,26 @@ section.portfolio-section .isotope-container .remove-col-padding {
 }
 .tab-section-01 .tabs li a {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.05em;
-    font-size: 11px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 12px;
 }
 .tab-section-01.style-1 .tabs li {
     margin-right: 5px;
 }
 .tab-section-01.style-1 .tabs li a {
     background-color: #eeeeee;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     outline: none;
-    padding: 10px 40px;
+    padding: 10px 30px;
 }
 .tab-section-01.style-1 .tabs li.active a,
 .tab-section-01.style-1 .tabs li.active a:focus,
 .tab-section-01.style-1 .tabs li.active a:hover {
     color: #ffffff;
-    background-color: #30B397;
-    border-color: #30B397;
+    background-color: #567151;
+    border-color: #567151;
     cursor: default;
 }
 .tab-section-01.style-1 .tabs li:hover a {
