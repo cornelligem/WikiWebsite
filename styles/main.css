@@ -175,6 +175,12 @@ body {
 
 /**********-----------Wiki - END TITLE DESCRIPTION & TILES-----------**********/
 
+/**********-----------Wiki - FOOTER-----------**********/
+.footer {
+  background: #F6F8FB;
+}
+/**********-----------Wiki - END FOOTER-----------**********/
+
 /**********-----------Wiki - SIDE BAR-----------**********/
 .sidebar-wrapper {
   font-family: 'Source Sans Pro', serif;
@@ -388,7 +394,7 @@ body {
     color: #000000;
     line-height: normal;
     letter-spacing: 3px;
-    
+
 }
 .prot-content a{
     color:rgb(86,113,81);
@@ -757,7 +763,7 @@ p.nmb {
     background-color: #ffffff;
 }
 .bgc-gray {
-    background-color: #f6f8fB;
+    background-color: #ffffff;
 }
 .border-bottom {
     border-bottom: solid 1px #eeeeee;
