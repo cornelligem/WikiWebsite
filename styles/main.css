@@ -9950,6 +9950,7 @@ section.portfolio-section .isotope-container .remove-col-padding {
 }
 .tab-section-01 .content p:last-of-type {
     margin-bottom: 0;
+    opacity: 0.5;
 }
 .tab-section-01 .tabs li {
     display: inline-block;

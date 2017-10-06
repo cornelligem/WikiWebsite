@@ -49,3 +49,38 @@ body {
     font-size: 65px;
     color: #000000;
 }
+
+/********************************* END HEADER  ********************************/
+
+/********************************* TABS  ********************************/
+
+.practices-title {
+  font-family: 'Source Sans Pro', serif;
+  font-size: 30px;
+  /*font-weight: bold;*/
+}
+
+.practices-overview {
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.content {
+  font-family: 'Crimson Text', serif;
+}
+
+.tab-header {
+  padding: 15px 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+.tab-content {
+  padding: 0 175px;
+  font-size: 16px;
+  text-align: center;
+  line-height: normal;
+}
+
+/********************************* END TABS  ********************************/
