@@ -92,7 +92,7 @@ body {
   position: absolute;
   top: 0;
   left: 48%;
-  height: 100px;
+  height: 500px;
   width: 2px;
   background: #000000;
 }
@@ -100,7 +100,22 @@ body {
 .timeline-img {
   display: block;
   margin: 0 auto;
+  padding-top: 25px;
   width: 80%;
+}
+
+.date {
+  font-family: 'Source Sans Pro', serif;
+}
+
+.timeline-content h3 {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: bold;
+}
+
+.timeline-content p {
+  line-height: normal;
+  font-size: 16px;
 }
 
 /********************************* END TIMELINE  ********************************/
