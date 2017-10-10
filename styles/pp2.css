@@ -84,17 +84,22 @@ body {
 
 .timeline {
   position: relative;
+  margin-top: 50px;
 }
 
 /* vertical line */
 .timeline::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 48%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 500px;
   width: 2px;
   background: #000000;
+  z-index: 1;
 }
 
 .timeline-img {
@@ -116,6 +121,23 @@ body {
 .timeline-content p {
   line-height: normal;
   font-size: 16px;
+}
+
+.timeline-content-right {
+  padding-left: 25px;
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #567151;
+  background: #567151;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999
 }
 
 /********************************* END TIMELINE  ********************************/
