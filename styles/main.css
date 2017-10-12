@@ -290,6 +290,74 @@ body {
 }
 /**********-----------Wiki - END BIOS-----------**********/
 
+/**********-----------Wiki - ABOUT-----------**********/
+.about-banner-wrapper {
+    margin-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.about-banner-wrapper .about-banner-caption-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: url("../images/cornellTeamCoverPhoto.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.about-banner-caption {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    moz-transform: translateX(-50%) translateY(-50%);
+    webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 65px;
+    color: #000000;
+}
+.about-content-wrapper{
+    padding: 0px 200px 100px 200px;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    color: #000000;
+
+}
+.about-content{
+    font-family: 'Source Sans Pro', serif;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.about-title{
+    font-family: 'Source Sans Pro', serif;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000;
+    line-height: normal;
+    letter-spacing: 3px;
+    margin-top: 50px;
+
+}
+.about-subtitle{
+    font-family: 'Source Sans Pro', serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    line-height: normal;
+    margin-top: 30px;
+   
+
+}
+
+/**********-----------Wiki - END ABOUT-----------**********/
 
 /**********-----------Wiki - SAFETY-----------**********/
 .safetyContent{
