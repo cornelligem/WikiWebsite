@@ -264,6 +264,50 @@ body {
 }
 /**********-----------Wiki - END SPONSORS-----------**********/
 
+/**********-----------Wiki - STANDARD PAGE-----------**********/
+.site-header {
+    padding-left: 77.2px;
+    padding-right: 77.2px;
+    width: 100%;
+    display: table;
+}
+
+.headerImage {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.headerText {
+    background-color: rgba(246,247,246, 0.5);
+    padding: 6% 4%;
+    width: 60%;
+    position: relative;
+    left: 40%;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+.headerText .title {
+    font-weight: 400;
+    font-size: 4em;
+    color: rgb(7,7,7);
+    line-height: 1.6;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
+
+.headerText .subtitle {
+    font-size: 2em;
+}
+/**********-----------Wiki - END STANDARD PAGE-----------**********/
+
 /**********-----------Wiki - FOOTER-----------**********/
 
 .footerTitle {
