@@ -190,25 +190,60 @@ body {
 /**********-----------Wiki - END SIDE BAR-----------**********/
 
 /**********-----------Wiki - NOTEBOOK-----------**********/
+.notebookContent{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding:96px 0;
+    background-color:white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.notebookContentGray{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding:96px 0;
+    background-color:rgb(247,247,247);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.notebookHeading{
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing:6px;
+    color:black;
+    padding-top:100px;
+    font-weight:300px;
+}
+
+.notebookSubheading{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 50px;
+    letter-spacing:6px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+
+.notebookp{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:black;
+    line-height: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.notebookpcont{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:black;
+    line-height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .notebook-banner-wrapper {
-    margin-bottom: 100px;
     padding-left: 0;
     padding-right: 0;
 }
 
-.notebook-banner-wrapper .notebook-banner-caption-wrapper {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    background: #edefee;
-    background-position: center center;
-    background-size: cover;
-}
-
-.notebook-banner-caption {
+.notebook-banner-wrapper .notebook-banner-caption {
     position: absolute;
     left: 50%;
     top: 45%;
