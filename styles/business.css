@@ -1,0 +1,61 @@
+/********************************* HEADER  ********************************/
+
+.practices-banner-wrapper {
+    margin-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.practices-banner-wrapper .practices-banner-caption-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: url("http://2017.igem.org/wiki/images/6/65/CornellSlideshowSlide2.JPG");
+    background-position: center center;
+    background-size: cover;
+}
+
+.practices-banner-caption {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-size: 65px;
+    color: #000000;
+}
+
+/********************************* END HEADER  ********************************/
+
+/********************************* TABS  ********************************/
+
+.business-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+  font-weight: bold:
+  color: black;
+}
+
+.business-overview {
+  font-size: 20px;
+  line-height: normal;
+    color: black;
+}
+
+.tab-header {
+  padding: 15px 0;
+  font-size: 22px;
+}
+
+.tab-content {
+  padding: 0 175px;
+  font-size: 16px;
+  line-height: normal;
+}
+
+/********************************* END TABS  ********************************/
