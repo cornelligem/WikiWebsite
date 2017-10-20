@@ -1,5 +1,7 @@
 /********************************* HEADER  ********************************/
-
+ul{
+    text-align: center;
+}
 .business-banner-wrapper {
     margin-bottom: 100px;
     padding-left: 0;
