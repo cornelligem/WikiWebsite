@@ -5,6 +5,19 @@
     margin: 0;
 }
 
+/**********-----------Wiki - NAV BAR-----------**********/
+ul.nav-main-menu.nav-content-item {
+    margin: 0;
+    padding: 0;
+}
+ul.nav-main-menu.nav-content-item li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/**********-----------Wiki - NAV BAR-----------**********/
+
 /**********-----------Wiki - SLIDE SHOW-----------**********/
 .home-fw-slider.style-2 .item-image .caption-wrapper .titleSlide {
     font-size: 30px;
@@ -154,11 +167,101 @@
 }
 
 /**********-----------Wiki - END TITLE DESCRIPTION & TILES-----------**********/
-
-/**********-----------Wiki - FOOTER-----------**********/
-.footer {
-  background: #F6F8FB;
+/**********-----------Wiki - STYLE GUIDE-----------**********/
+.solid-banner-wrapper {
+    margin-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
 }
+
+.banner-wrapper {
+    margin-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner-image-about {
+  background: url("http://2017.igem.org/wiki/images/d/dc/T--Cornell--About_Banner.jpeg");
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.banner-image-bios {
+  background: url("../images/cornellTeamCoverPhoto.png");
+}
+
+.banner-caption {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 65px;
+    color: #000000;
+}
+
+.content-wrapper{
+    padding: 0px 200px 100px 200px;
+    font-family: 'Crimson Text', serif;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: left;
+    color: rgba(7,7,7,0.7);
+    line-height: normal;
+}
+
+.space {
+  height: 30px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bullet-list {
+  list-style-type: disc;
+}
+
+.content-title{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  letter-spacing: 3px;
+  color: rgb(30,30,30);
+  margin-bottom: 10px;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-top: 50px;
+}
+
+.content-subtitle{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(50,50,50);
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.references li {
+  margin-bottom: 5px;
+}
+/**********-----------Wiki - END STYLE GUIDE-----------**********/
+
 /**********-----------Wiki - END FOOTER-----------**********/
 
 /**********-----------Wiki - SIDE BAR-----------**********/
@@ -238,37 +341,6 @@
 /**********-----------Wiki - END NOTEBOOK-----------**********/
 
 /**********-----------Wiki - BIOS-----------**********/
-.bios-banner-wrapper {
-    margin-bottom: 100px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.bios-banner-wrapper .bios-banner-caption-wrapper {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    background: url("../images/cornellTeamCoverPhoto.png");
-    background-position: center center;
-    background-size: cover;
-}
-
-.bios-banner-caption {
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
-    font-family: 'Crimson Text', serif;
-    font-size: 65px;
-    color: #000000;
-}
-
 .bio-wrapper {
     margin-bottom: 25px;
 }
@@ -306,71 +378,7 @@
 /**********-----------Wiki - END BIOS-----------**********/
 
 /**********-----------Wiki - ABOUT-----------**********/
-.about-banner-wrapper {
-    margin-bottom: 100px;
-    padding-left: 0;
-    padding-right: 0;
-}
 
-.about-banner-wrapper .about-banner-caption-wrapper {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    background: url("../images/cornellTeamCoverPhoto.png");
-    background-position: center center;
-    background-size: cover;
-}
-
-.about-banner-caption {
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
-    font-family: 'Crimson Text', serif;
-    font-size: 65px;
-    color: #000000;
-}
-.about-content-wrapper{
-    padding: 0px 200px 100px 200px;
-    font-family: 'Crimson Text', serif;
-    font-size: 16px;
-    color: #000000;
-
-}
-.about-content{
-    font-family: 'Source Sans Pro', serif;
-    font-size: 16px;
-    color: #000000;
-    margin-bottom: 15px;
-}
-.about-title{
-    font-family: 'Source Sans Pro', serif;
-    margin-bottom: 10px;
-    font-size: 36px;
-    font-weight: 400;
-    color: #000000;
-    line-height: normal;
-    letter-spacing: 3px;
-    margin-top: 50px;
-
-}
-.about-subtitle{
-    font-family: 'Source Sans Pro', serif;
-    margin-bottom: 10px;
-    font-size: 25px;
-    font-weight: 400;
-    color: #000000;
-    line-height: normal;
-    margin-top: 30px;
-
-
-}
 
 /**********-----------Wiki - END ABOUT-----------**********/
 
@@ -400,42 +408,10 @@
 /**********-----------Wiki - END SAFETY-----------**********/
 
 /**********-----------Wiki - ATTRIBUTIONS -----------**********/
-.attri-banner-wrapper {
-    margin-bottom: 100px;
-    padding-left: 0;
-    padding-right: 0;
-}
-.attri-banner-wrapper .attri-banner-caption {
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
-    font-family: 'Crimson Text', serif;
-    font-size: 65px;
-    color: #000000;
-}
-.attri-content-wrapper{
-    padding: 0px 200px 100px 200px;
-    font-family: 'Crimson Text', serif;
-    font-size: 16px;
-    color: #000000;
-
-}
-.attri-content{
-
-    font-family: 'Crimson Text', serif;
-    font-size: 16px;
-    color: #000000;
-}
-#attri-list li{
+li{
     list-style: circle;
     margin-left: 30px;
-
 }
-
 
 /**********-----------Wiki - END ATTRIBUTIONS -----------**********/
 /**********-----------Wiki - PROTOCOL -----------**********/
@@ -553,9 +529,40 @@
 }
 
 /**********-----------Wiki - END STANDARD PAGE-----------**********/
+/**********-----------Wiki - BUSINESS -----------**********/
+.banner-image-business {
+  background: url("http://2017.igem.org/wiki/images/8/83/T--Cornell--4H3.jpg");
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  background-position: right;
+}
+
+.content-wrapper.business {
+  padding-bottom: 0;
+}
+
+.tab-header {
+  padding: 28px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.tab-content {
+  padding-left: 70px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.list-business {
+  padding-left: 20px;
+}
+
+/**********-----------Wiki - END BUSINESS -----------**********/
 
 /**********-----------Wiki - FOOTER-----------**********/
-
 .footerTitle {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1001,15 +1008,7 @@ a.active {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-ul {
-    margin: 0;
-    padding: 0;
-}
-ul li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+
 body {
     position: relative;
     overflow-x: hidden;
