@@ -1,4 +1,4 @@
-/********************************* HEADER  ********************************/
+/********************************* PRACTICES HEADER  ********************************/
 
 .practices-banner-wrapper {
     margin-bottom: 100px;
@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    background: url("http://2017.igem.org/wiki/images/6/65/CornellSlideshowSlide2.JPG");
+    background: url("http://2017.igem.org/wiki/images/2/27/T--Cornell--Farm3.jpg");
     background-position: center center;
     background-size: cover;
 }
@@ -30,9 +30,9 @@
     color: #000000;
 }
 
-/********************************* END HEADER  ********************************/
+/********************************* END PRACTICES HEADER  ********************************/
 
-/********************************* TABS  ********************************/
+/********************************* PRACTICES TABS  ********************************/
 
 .practices-title {
   font-family: 'Source Sans Pro', serif;
@@ -58,9 +58,9 @@
   line-height: normal;
 }
 
-/********************************* END TABS  ********************************/
+/********************************* END PRACTICES TABS  ********************************/
 
-/********************************* TIMELINE  ********************************/
+/********************************* PRACTICES TIMELINE  ********************************/
 
 .timeline {
   position: relative;
@@ -129,4 +129,4 @@
   z-index: 3;
 }
 
-/********************************* END TIMELINE  ********************************/
+/********************************* END PRACTICES TIMELINE  ********************************/
