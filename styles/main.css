@@ -16,7 +16,11 @@ ul.nav-main-menu.nav-content-item li {
     padding: 0;
 }
 
-/**********-----------Wiki - NAV BAR-----------**********/
+#bios{
+  padding-right: 100px;
+ }
+
+/**********-----------Wiki - END NAV BAR-----------**********/
 
 /**********-----------Wiki - SLIDE SHOW-----------**********/
 .home-fw-slider.style-2 .item-image .caption-wrapper .titleSlide {
@@ -377,9 +381,7 @@ section.content-wrapper {
 
 /**********-----------Wiki - BUSINESS-----------**********/
 /********************************* HEADER  ********************************/
-ul{
-    text-align: center;
-}
+
 .business-banner-wrapper {
     margin-bottom: 100px;
     padding-left: 0;
@@ -3391,6 +3393,7 @@ nav:after {
         font-size: 14px;
         padding-bottom: 0;
         margin-bottom: 15px;
+        text-align: left;
     }
     .nav-main-menu:not(.left-menu) > .sub-menu.mega-menu .mega-menu-content > li.menu-title > a:after {
         border-bottom: 2px solid transparent;
