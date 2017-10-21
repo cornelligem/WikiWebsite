@@ -14,10 +14,12 @@ ul{
     height: 500px;
     top: 0;
     left: 0;
+    
     overflow: hidden;
     background: url("http://2017.igem.org/wiki/images/8/83/T--Cornell--4H3.jpg");
     background-position: center center;
     background-size: cover;
+    background-color: rgba(0,0,0,0.7);
 }
 
 .business-banner-caption {
@@ -40,6 +42,7 @@ ul{
   font-family: 'Crimson Text', serif;
   font-size: 30px;
   color: black;
+    margin-bottom: 30px;
 }
 
 .business-overview {
