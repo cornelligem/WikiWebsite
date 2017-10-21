@@ -3538,6 +3538,7 @@ nav:after {
         font-size: 14px;
         padding-bottom: 0;
         margin-bottom: 15px;
+        text-align: left;
     }
     .nav-main-menu:not(.left-menu) > .sub-menu.mega-menu .mega-menu-content > li.menu-title > a:after {
         border-bottom: 2px solid transparent;
