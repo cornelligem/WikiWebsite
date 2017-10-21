@@ -230,6 +230,14 @@ ul.nav-main-menu.nav-content-item li {
   font-style: italic;
 }
 
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
 .bullet-list {
   list-style-type: disc;
 }
@@ -273,71 +281,44 @@ ul.nav-main-menu.nav-content-item li {
 /**********-----------Wiki - END SIDE BAR-----------**********/
 
 /**********-----------Wiki - NOTEBOOK-----------**********/
-.notebookContent{
-    font-family: 'Source Sans Pro', sans-serif;
-    padding:96px 0;
-    background-color:white;
-    font-weight: 400;
+section.content-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content-wrapper.notebook {
     font-size: 18px;
 }
 
-.notebookContentGray{
-    font-family: 'Source Sans Pro', sans-serif;
-    padding:96px 0;
+.content-wrapper.notebook .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content-wrapper.notebook .row .content-title {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.row.top {
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+
+.row {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.gray{
     background-color:rgb(247,247,247);
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.notebookHeading{
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing:6px;
-    color:black;
-    padding-top:100px;
-    font-weight: 300;
-}
-
-.notebookSubheading{
-    font-family: 'Source Sans Pro', sans-serif;
-    padding-top: 50px;
-    letter-spacing:6px;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    font-size: 32px;
 }
 
 .notebookp{
-    font-family: 'Source Sans Pro', sans-serif;
-    color:black;
-    line-height: 40px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.notebookpcont{
-    font-family: 'Source Sans Pro', sans-serif;
-    color:black;
-    line-height: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
 
-.notebook-banner-wrapper {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.notebook-banner-wrapper .notebook-banner-caption {
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
-    font-family: 'Crimson Text', serif;
-    font-size: 65px;
-    color: #000000;
-}
 /**********-----------Wiki - END NOTEBOOK-----------**********/
 
 /**********-----------Wiki - BIOS-----------**********/
