@@ -248,6 +248,7 @@ ul.nav-main-menu.nav-content-item li {
 
 .references li {
   margin-bottom: 5px;
+  list-style: decimal;
 }
 
 .space {
@@ -327,6 +328,8 @@ section.content-wrapper {
 
 .banner-image-bios {
   background: url("http://2017.igem.org/wiki/images/0/0e/T--Cornell--TeamCoverPhoto.png");
+  background-position: center center;
+  background-size: cover;
 }
 
 .row.bio-wrapper.top {
@@ -476,7 +479,11 @@ ul{
 /**********-----------Wiki - END SAFETY-----------**********/
 
 /**********-----------Wiki - ATTRIBUTIONS -----------**********/
-li{
+#attri-list {
+  text-align: left;
+}
+
+#attri-list li{
     list-style: circle;
     margin-left: 30px;
 }
