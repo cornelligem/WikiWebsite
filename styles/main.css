@@ -284,17 +284,11 @@ ul.nav-main-menu.nav-content-item li {
 
 /**********-----------Wiki - NOTEBOOK-----------**********/
 section.content-wrapper {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 
 .content-wrapper.notebook {
     font-size: 18px;
-}
-
-.content-wrapper.notebook .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .content-wrapper.notebook .row .content-title {
@@ -303,7 +297,7 @@ section.content-wrapper {
 }
 
 .row.top {
-  padding-top: 0px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
