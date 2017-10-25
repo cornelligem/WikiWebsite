@@ -10,6 +10,8 @@ ul.nav-main-menu.nav-content-item {
     margin: 0;
     padding: 0;
 }
+
+/*Prevents li from having bullets in nav bar */
 ul.nav-main-menu.nav-content-item li {
     list-style: none;
     margin: 0;
@@ -20,6 +22,14 @@ ul.nav-main-menu.nav-content-item li {
   padding-right: 100px;
  }
 
+/*Remove hover items hover directly under main nav bar */
+ .mega-menu-content {
+      padding: 0;
+ }
+
+ .sub-menu ul {
+   margin: 0;
+ }
 /**********-----------Wiki - END NAV BAR-----------**********/
 
 /**********-----------Wiki - SLIDE SHOW-----------**********/
