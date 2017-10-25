@@ -568,9 +568,7 @@ section.content-wrapper {
   /*remove padding from bottom of section*/
   padding-bottom: 0px;
 }
-/********************************* TABS  ********************************/
-
-
+/********************************* Wiki - PRACTICES PAGE: TABS  ********************************/
 
 .practices-overview {
   font-size: 16px;
@@ -590,9 +588,9 @@ section.content-wrapper {
   line-height: normal;
 }
 
-/********************************* END TABS  ********************************/
+/********************************* Wiki - END PRACTICES PAGE: TABS  ********************************/
 
-/********************************* TIMELINE  ********************************/
+/********************************* Wiki - PRACTICES PAGE: TIMELINE  ********************************/
 
 .timeline {
   position: relative;
@@ -662,8 +660,8 @@ section.content-wrapper {
   z-index: 3;
 }
 
-/********************************* END TIMELINE  ********************************/
-/**********-----------Wiki - PRACTICES PAGE-----------**********/
+/********************************* Wiki - END PRACTICES PAGE: TIMELINE  ********************************/
+/**********----------- Wiki - END PRACTICES PAGE-----------**********/
 
 /**********-----------Wiki - BUSINESS -----------**********/
 .banner-image-business {
@@ -697,7 +695,16 @@ section.content-wrapper {
 }
 
 /**********-----------Wiki - END BUSINESS -----------**********/
+/**********-----------Wiki - PARTS PAGE-----------**********/
+#groupparts table tr td a {
+  color: rgb(86,113,81);
+}
 
+.content-wrapper.parts.center {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/**********-----------Wiki - END PARTS PAGE-----------**********/
 /**********-----------Wiki - FOOTER-----------**********/
 .footerTitle {
     margin-top: 10px;
