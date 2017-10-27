@@ -741,6 +741,16 @@ font-family: 'Crimson Text', serif;
 /********************************* Wiki - END PRACTICES PAGE: TIMELINE  ********************************/
 /**********----------- Wiki - END PRACTICES PAGE-----------**********/
 
+/**********-----------Wiki - MODELS -----------**********/
+.banner-photo-models {
+  background: url("http://2017.igem.org/wiki/images/f/f9/T--Cornell--Greenhouse2.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+
+/**********----------- Wiki - END MODELS PAGE-----------**********/
+
 /**********-----------Wiki - BUSINESS -----------**********/
 .banner-image-business {
   background: url("http://2017.igem.org/wiki/images/8/83/T--Cornell--4H3.jpg");
