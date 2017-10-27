@@ -122,7 +122,7 @@ ul.nav-main-menu.nav-content-item li {
 }
 
 .tiles-wrapper {
-    padding-top: 0px;;
+    padding-top: 100px;
 }
 
 .tilesWrapper {
@@ -345,6 +345,7 @@ section.content-wrapper {
 
 .row.bio-wrapper.top {
   padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 .row.bio-wrapper.bottom {
