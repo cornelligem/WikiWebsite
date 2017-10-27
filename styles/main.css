@@ -431,7 +431,7 @@ section.content-wrapper {
   font-size: 22px;
   font-weight: bold;
 }
-<<<<<<< HEAD
+
 .about-subtitle{
     font-family: 'Source Sans Pro', serif;
     margin-bottom: 10px;
@@ -440,9 +440,9 @@ section.content-wrapper {
     color: #000000;
     line-height: normal;
     margin-top: 30px;
+}
 
-=======
->>>>>>> 178c5a652dfe5e213132d21d061d779b0672c01f
+
 
 .tab-content {
   padding: 0 0px;
