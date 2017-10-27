@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html class="no-js">
+    <style> /********************************* WIKI RESET  ********************************/
+        #sideMenu, #top_title {
+            display:none;
+        }
+        #content {
+            padding:0px;
+            width:100% !important;
+            margin-top:-26px;
+            margin-left:0px ;
+            font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+        }
+        body {
+            background-color: black;
+            font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+        }
+        #bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 {
+            font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+        }
+    </style>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home</title>
-        <meta name="description" content="Home">
+        <title>Collaborations</title>
+        <meta name="description" content="Attributions">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Stylesheets-->
         <link rel="stylesheet" href="styles/bootstrap.min.css">
-        <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/styles.css"> <!--For nav bar text-->
-
+        <link rel="stylesheet" href="styles/main.css">
         <!-- JavaScript Files-->
         <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </head>
 
-   <!------------------------NAV BAR------------------------>
+    <body class="ex-layout">
+        <!------------------------NAV BAR------------------------>
 
     <body class="ex-layout">
     <div class="main-nav-wrapper nav-wrapper-1-creative">
@@ -149,77 +168,66 @@
           </div>
         </div>
       </nav>
-      </div>
+    </div>
     <main>
-      <!------------------------BANNER------------------------>
-      <header class="container-fluid banner-wrapper banner-photo-wetlab">
-        <div class="caption">
-          Wet Lab
+   <!------------------------END NAV BAR------------------------>
+        <!------------------------BANNER------------------------>
+        <div class="container-fluid solid-banner-wrapper">
+            <svg width=100% height="300">
+                <rect width=100% height="300" style="fill:rgb(86,113,81);fill-opacity:0.3;" />
+                <text text-anchor="middle" alignment-baseline="middle" text-anchor="middle" x=50% y=50% style="font-family:Crimson Text" font-size="65">Collaborations</text>
+            </svg>
         </div>
-      </header>
-      <!------------------------END BANNER------------------------>
-      <!-- Sidebar + Content-->
-      <div id="sidebar" class="container content-wrapper-font">
-          <div class="row standardPageContent">
-              <!-- Side bar -->
-              <div class="col-md-3 col-xs-3 sidebar">
-                <ul class="sidebar-wrapper">
-                    <li><a href="#overview">OVERVIEW</a></li>
-                    <li><a href="#biobricks">BIOBRICKS</a></li>
-                    <li><a href="#chassis">CHASSIS</a></li>
-                    <li><a href="#results">RESULTS</a></li>
-                    <li><a href="#futurework">FUTURE WORK</a></li>
-                    <li><a href="#references">REFERENCES</a></li>
-                </ul>
+
+        <!------------------------END BANNER------------------------>
+        <!------------------------COLLABORATION------------------------>
+        <div class="content-wrapper">
+            <div>
+              As a team of only undergraduates, we conceived this concept on our own and have worked on it from start to finish.  Our wet lab team cloned the redox-sensitive fluorescent proteins, ROS scavengers, and light-sensitive promoters and other redox-related proteins into pSB1C3.  The team also tested the pDawn and pDusk system and characterized the redox-sensitive fluorescent proteins coupled with the ROS scavengers. Dry lab designed, 3D printed, and prototyped the camera system with the plastic planter cups filled with wet lab’s bacteria using materials and funding from REV and Cornell’s College of Engineering. The team also tested our project in Cornell greenhouses and PureSpinach’s own plants. Policies and practices led and organized the numerous outreach programs directed to the youth and the wider public. The team met with and reached out to a diverse array of researchers, and hydroponics growers for ideation and implementation of our project. To understand how the the project fit into society, the team conducted surveys and met with lawmakers and educators.
+            </div>
+            <div class = "space"></div>
+            <div>Cornell iGEM’s OxyPonics would not have been possible without the guidance and support of our many advisors and organizations that we have worked with:</div>
+            <div class = "space"></div>
+            <div>Our wet lab research was conducted in the Cornell Biomedical Instructional lab directed by Dr. Shivaun Archer. Dr. Archer provided us with all the necessary equipments including a gel imaging station, sterile hood, centrifuges, thermal-cyclers, and vortexes. She also oversaw lab safety and trained new members on lab safety measures.</div>
+            <div class = "space"></div>
+            <div>Dr. Jan Lammerding for advising our team and letting us use facilities in his lab for protein purification.</div>
+            <div class = "space"></div>
+            <div>Brian Bauer, Ken Rother, and Xanthe Matychak at REV for funding OxyPonics and offering their space and mentorship at every step of the project. </div>
+            <div class = "space"></div>
+            <div>AmHydro, Bolton Farms, Vertical Harvest, Terrapin Farms, Intergrow, Karma Farms, Red Acres Hydroponics for their time and willingness to meet with us to provide their insight and experience for our project.</div>
+            <div class = "space"></div>
+            <div>Professors Neil Mattson, Adrienne Roeder, Yimon Aye, Miguel Pineros, Professor Paula Turkon, and Jed Sparks for providing their expertise in the myriad of fields necessary for the success of our project.</div>
+            <div class = "space"></div>
+            <div>In addition, we would like to thank the following for their help and guidance:</div>
+            <ul id="attri-list">
+              <li>Integrated DNA Technologies for the generous base pair donation.</li>
+              <li>All our interviewees who took the time to give us feedback on our project. Your opinions are crucial to designing our product.</li>
+              <li>Rebecca MacDonald for helping us with team organization and business relations, and Cornell’s College of Engineering for providing us the platform to participate in iGEM.</li>
+            </ul>
+        </div>
+        <!------------------------END COLLABORATION------------------------>
+        <main>
+          <!------------------------FOOTER------------------------>
+          <footer class="footer-preset-04 footer bgc-gray">
+              <div class="social-04">
+                  <a class="footerIconWrapper" href="https://www.facebook.com/cornelligem/">
+                      <div class="overlay"></div>
+                      <img src="images/cornellFacebookIcon.png" alt="Facebook" height="20"></a>
+                  <a class="footerIconWrapper" href="https://twitter.com/cugem">
+                      <div class="overlay"></div>
+                      <img src="images/cornellTwitterIcon.png" alt="Twitter" height="20">
+                  </a>
+                  <a class="footerIconWrapper" href="https://www.instagram.com/cugem/">
+                      <div class="overlay"></div>
+                      <img src="images/cornellInstagramIcon.png" alt="Instagram" height="20">
+                  </a>
+                  <a class="footerIconWrapper" href="https://www.youtube.com/channel/UCJt-5JfyoucUJXC1EsTllhg">
+                      <div class="overlay"></div>
+                      <img src="images/cornellYoutubeIcon.png" alt="Youtube" height="20">
+                  </a>
               </div>
-
-                <!-- Page Content -->
-                <div class="col-md-9 col-xs-9 content">
-                       <div class="content-title"><a id="overview">OVERVIEW</a></div>
-                          <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
-                          </p>
-                       <div class="content-title"><a id="biobricks">BIOBRICKS</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
-                         </p>
-                       <div class="content-title"><a id="chassis">CHASSIS</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
-                         </p>
-                       <div class="content-title"><a id="results">RESULTS</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
-                         </p>
-                       <div class="content-title"><a id="futurework"> FUTURE WORK</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
-                         </p>
-                       <div class="content-title"><a id="references">REFERENCES</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
-                         </p>
-
-                   </div>
-              </div>
-             </div>
-
-
-             <!------------------------FOOTER------------------------>
-             <footer class="footer-preset-04 footer bgc-gray">
-                 <div class="social-04">
-                     <a class="footerIconWrapper" href="https://www.facebook.com/cornelligem/">
-                         <div class="overlay"></div>
-                         <img src="http://2017.igem.org/wiki/images/0/0b/CornellFacebookIcon.png" alt="Facebook" height="20"></a>
-                     <a class="footerIconWrapper" href="https://twitter.com/cugem">
-                         <div class="overlay"></div>
-                         <img src="http://2017.igem.org/wiki/images/5/50/CornellTwitterIcon.png" alt="Twitter" height="20">
-                     </a>
-                     <a class="footerIconWrapper" href="https://www.instagram.com/cugem/">
-                         <div class="overlay"></div>
-                         <img src="http://2017.igem.org/wiki/images/3/36/CornellInstagramIcon.png" alt="Instagram" height="20">
-                     </a>
-                     <a class="footerIconWrapper" href="https://www.youtube.com/channel/UCJt-5JfyoucUJXC1EsTllhg">
-                         <div class="overlay"></div>
-                         <img src="http://2017.igem.org/wiki/images/5/50/CornellYoutubeIcon.png" alt="Youtube" height="20">
-                     </a>
-                 </div>
-             </footer>
-             <!------------------------END FOOTER------------------------>
-       </main>
+          </footer>
+          <!------------------------END FOOTER------------------------>
+        </main>
     </body>
 </html>
