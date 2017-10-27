@@ -221,7 +221,7 @@ ul.nav-main-menu.nav-content-item li {
     color: #000000;
 }
 
-.content-wrapper{
+.content-wrapper {
     padding: 100px 200px 100px 200px;
     font-family: 'Crimson Text', serif;
     font-size: 17px;
@@ -295,8 +295,18 @@ ul.nav-main-menu.nav-content-item li {
 /**********-----------Wiki - END STYLE GUIDE-----------**********/
 
 /**********-----------Wiki - SIDE BAR-----------**********/
+.sidebar-wrapper {
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+  text-align: left;
+  color: rgba(7,7,7,0.7);
+  line-height: normal;
+}
+
 .sidebar-wrapper li {
   list-style: none;
+  text-align: left;
+  margin-bottom: 15px;
 }
 /**********-----------Wiki - END SIDE BAR-----------**********/
 
@@ -798,6 +808,18 @@ font-family: 'Crimson Text', serif;
   padding-bottom: 50px;
 }
 /**********-----------Wiki - END PARTS PAGE-----------**********/
+/**********-----------Wiki - SOFTWARE -----------**********/
+.image-wrapper img {
+  margin-bottom: 30px;
+}
+
+.banner-photo-software {
+  background: url("http://2017.igem.org/wiki/images/d/de/T--Cornell--DashboardBanner.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+/**********-----------Wiki - END SOFTWARE-----------**********/
 /**********-----------Wiki - FOOTER-----------**********/
 .footerTitle {
     margin-top: 10px;
