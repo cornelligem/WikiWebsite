@@ -26,10 +26,13 @@
 }
 
 #HQ_page p {
-font-family:"Crimson Text", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
-font-size: 16px; !important;
-text-align: left; !important;
-
+  font-family: 'Crimson Text', serif;
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: left;
+  color: rgba(7,7,7,0.7);
+  line-height: normal;
 }
 
 #HQ_page .bio-title {
@@ -50,11 +53,16 @@ a:visited {
   color: #000000;
 }
 
+.mw-content-ltr ul, .mw-content-rtl .mw-content-ltr ul {
+   margin: 0;
+   padding: 0;
+}
+
   </style>
   <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Bios</title>
+      <title>Software</title>
       <meta name="description" content="Bios">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!--Stylesheets-->
@@ -138,14 +146,14 @@ a:visited {
     <main>
    <!------------------------END NAV BAR------------------------>
       <!------------------------BANNER------------------------>
-      <header class="container-fluid banner-wrapper banner-photo-wetlab">
+      <header class="container-fluid banner-wrapper banner-photo-software">
         <div class="caption">
-          Wet Lab
+          Dashboard
         </div>
       </header>
       <!------------------------END BANNER------------------------>
       <!-- Sidebar + Content-->
-      <div id="sidebar" class="container content-wrapper-font">
+      <div id="sidebar" class="container-fluid content-wrapper-font">
           <div class="row standardPageContent">
               <div class="col-xs-1"></div>
               <!-- Side bar -->
@@ -155,24 +163,39 @@ a:visited {
                     <li><a href="#analytics">INSTANT ANALYTICS</a></li>
                     <li><a href="#updates">UPDATES &amp; REPORTS</a></li>
                     <li><a href="#support">MULTI-PLATFORM SUPPORT</a></li>
+                    <li><a href="#references">REFERENCES</a></li>
                 </ul>
               </div>
 
                 <!-- Page Content -->
                 <div class="col-xs-8 standard-content">
                        <div class="content-title"><a id="overview">OVERVIEW</a></div>
-                          <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
+                          <p>Using feedback from hydroponic farmers, we’ve designed a functional way to monitor and display important information about the plants’ environment, providing our users with technology that is simple and easy to use.  The dashboard’s primary purpose is to provide an easily accessible platform that displays information about the hydroponics system’s environment in real-time.  The dashboard will have the capabilities to monitor pH, electrical conductivity, temperature, and oxidative stress, and alert farmers immediately of any imbalances in the system so that they can mitigate any harm to their crops. In order to amplify the impact of this software system, the dashboard will be multi-platform so that it can work on any operating system, including Android, iOS, and Windows.
                           </p>
                        <div class="content-title"><a id="analytics">Instant Analytics</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
-                         </p>
+                         <p>The dashboard provides farmers with real-time data on the state of their crops around the clock. Unlike current automation systems, OxyPonics measures both oxidative stress and other standard variables monitored in a plant’s environment, allowing for better control and improved yields. Once there is a change in the hydroponic system, the dashboard will notify the farmer and give them the opportunity to change any necessary settings at their convenience to ensure their crops are growing in a robust environment. The system operates similarly to competitive systems, but incorporates additional features and is redesigned for a farmer’s perspective.</p>
+                         <p>We designed our product with farmers in mind by making a system that is more user friendly than existing dashboards and easier for growers to read analytics and locate specific growth issues. Since farmers struggle to navigate through current dashboards, stats and graphs are allocated into separate tabs to prevent any clutter of various analytics.  Each measured variable in the crops’ environment is visually distinct from other measured data.</p>
+                         <p>With its capability to provide instant analytics, the dashboard offers incredible functionality and versatility with more data presented in a simpler and friendlier form for hydroponic growers.</p>
+                         <div class="image-wrapper">
+                           <img class="img-responsive" src="http://2017.igem.org/wiki/images/f/f4/T--Cornell--DashboardAnalytics.png" alt="analytics"/>
+                         </div>
+
                        <div class="content-title"><a id="updates">Updates &amp; Reports</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
+                         <p>OIn addition to instant analytics, the dashboard provides farmers instant updates on the state of their crops at any time and allows for immediate action to be taken if necessary. The dashboard compiles data collected behind the scenes and translates it into reports. In our interviews with farmers, they wish to have all types of analytics and documentation available, but they prefer to display only specific analytics. Other systems tend to show stats, graphs, and reports aggregated together, which makes it difficult for farmers to quickly go through the information presented. The Oxyponics dashboard not only separates reports from the statistics, but also displays each analytic in its own respective tab.
                          </p>
+                         <p>Abundant information can be useful to have, but it can be overwhelming for users. Our dashboard allows farmers to choose what they see on their dashboard, reducing time wasted searching for certain data and increasing efficiency to run their businesses successfully.
+                         </p>
+                         <div class="image-wrapper">
+                           <img class="img-responsive" src="http://2017.igem.org/wiki/images/5/55/T--Cornell--DashboardGraphs.png" alt="graphs"/>
+                         </div>
                        <div class="content-title"><a id="support">Multi-Platform Support</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
+                         <p>To make the software easily accessible to farmers, the system's dashboard has multi-platform support. Working on all devices including iOS, Android, and Windows, the system can be smoothly integrated into devices that are familiar to farmers. Because our dashboard is also available on mobile devices, farmers can monitor their plants even when they're outside their greenhouses.
                          </p>
-                   </div>
+                         <div class="content-title"><a id="references">REFERENCES</a></div>
+                         <ol class="references">
+                           <li>Postscapes. (2016). Smart Greenhouse Remote Monitoring Systems. Retrieved from https://www.postscapes.com/wireless-open-source-hydroponics-harvestgeek/</li>
+                         </ol>
+                   </div> <!--standard-content-->
 
                 <div class="col-xs-1"></div>
               </div>
