@@ -255,6 +255,7 @@ ul.nav-main-menu.nav-content-item li {
   line-height: normal;
   letter-spacing: 3px;
   margin-top: 50px;
+  text-transform: uppercase;
 }
 
 .content-subtitle{
@@ -266,6 +267,15 @@ ul.nav-main-menu.nav-content-item li {
   margin-bottom: 10px;
   line-height: normal;
   margin-top: 30px;
+  text-transform: uppercase;
+}
+/*Turn Standard page's content title and content subtitle uppercase*/
+.content-title a {
+  text-transform: uppercase;
+}
+
+.content-subtitle a {
+  text-transform: uppercase;
 }
 
 .references li {
@@ -289,8 +299,28 @@ ul.nav-main-menu.nav-content-item li {
   font-weight: 600;
 }
 
-.bullet-list {
-  list-style-type: disc;
+.bullet-list li {
+  list-style: circle;
+  margin-left: 30px;
+}
+
+.link {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(86,113,81);
+}
+
+.link:visited {
+  color: rgb(86,113,81);
+
+}
+
+.link:hover {
+  color: rgb(159,199,151); /*Lighter green*/
+}
+
+.link:active {
+  color: rgb(159,199,151); /*Lighter green*/
 }
 /**********-----------Wiki - END STYLE GUIDE-----------**********/
 
@@ -795,6 +825,14 @@ font-family: 'Crimson Text', serif;
 }
 
 /**********-----------Wiki - END SOFTWARE-----------**********/
+/**********-----------Wiki - APPLIED DESIGN-----------**********/
+.banner-photo-applieddesign {
+  background: url("http://2017.igem.org/wiki/images/d/d1/T--Cornell--Greenhouse3.jpeg");
+  background-position: center bottom;
+  background-size: cover;
+}
+
+/**********-----------Wiki - END APPLIED DESIGN-----------**********/
 /**********-----------Wiki - FOOTER-----------**********/
 .footerTitle {
     margin-top: 10px;
