@@ -705,11 +705,36 @@ font-family: 'Crimson Text', serif;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -45%);
-  height: 900px;
+  /*transform: translate(-50%, -47%);*/
+  /*height: 2295px;*/
   width: 1.5px;
   background: #808080;
   z-index: 1;
+}
+
+.oxi-timeline::before {
+  transform: translate(-50%, -47.5%);
+  height: 2250px;
+}
+
+.plant-timeline::before {
+  transform: translate(-50%, -48%);
+  height: 2550px;
+}
+
+.growers-timeline::before {
+  transform: translate(-50%, -48.5%);
+  height: 3160px;
+}
+
+.business-timeline::before {
+  transform: translate(-50%, -46%);
+  height: 1225px;
+}
+
+.outreach-timeline::before {
+  transform: translate(-50%, -49.5%);
+  height: 1020px;
 }
 
 .timeline-block {
@@ -770,6 +795,16 @@ font-family: 'Crimson Text', serif;
 
 /********************************* Wiki - END PRACTICES PAGE: TIMELINE  ********************************/
 /**********----------- Wiki - END PRACTICES PAGE-----------**********/
+
+/**********-----------Wiki - MODELS -----------**********/
+.banner-photo-models {
+  background: url("http://2017.igem.org/wiki/images/f/f9/T--Cornell--Greenhouse2.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+
+/**********----------- Wiki - END MODELS PAGE-----------**********/
 
 /**********-----------Wiki - BUSINESS -----------**********/
 .banner-image-business {
