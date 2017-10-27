@@ -594,6 +594,14 @@ section.content-wrapper {
 
 /********************************* END PRACTICES TIMELINE  ********************************/
 
+/**********-----------Wiki - POLICIES-----------**********/
+.banner-image-policies {
+  background: url("http://2017.igem.org/wiki/images/0/0b/T--Cornell--GreenhouseBanner.png");
+   background-position: center center;
+  background-size: cover;
+}
+
+/**********-----------Wiki - END POLICIES-----------**********/
 /**********-----------Wiki - SAFETY-----------**********/
 .safetyContent{
     padding:96px 0;
