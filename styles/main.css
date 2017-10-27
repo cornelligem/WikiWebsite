@@ -237,6 +237,10 @@ ul.nav-main-menu.nav-content-item li {
   font-size: 17px;
 }
 
+.content-title.no-subtitle {
+  margin-bottom: 30px;
+}
+
 .content-title.top {
   margin-top: 0px;
 }
@@ -459,6 +463,8 @@ section.content-wrapper {
   background: url("http://2017.igem.org/wiki/images/d/dc/T--Cornell--About_Banner.jpeg");
   opacity: 0.7;
   filter: alpha(opacity=70);
+  background-position: center center;
+  background-size: cover;
 }
 
 /**********-----------Wiki - END ABOUT-----------**********/
@@ -488,36 +494,39 @@ section.content-wrapper {
 
 /**********-----------Wiki - SPONSORS-----------**********/
 .sponsors {
-    font-family: 'Crimson Text', serif;
+  font-family: 'Crimson Text', serif;
+  margin-bottom: 100px;
 }
 
 .sponsors-title {
-    margin: 100px 0;
-    text-align: center;
-    font-size: 65px;
+  margin: 100px 0;
+  text-align: center;
+  font-size: 65px;
 }
 
 .sponsor-wrapper {
-    margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .sponsor-sqr-circ-icon {
-    height: 200px;
-    width: auto;
+  height: 200px;
+  width: auto;
 }
 
 .sponsor-icon {
-    width: 100%;
+  width: 100%;
 }
 
 .sponsor-icon, .sponsor-sqr-circ-icon {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 .sponsor-info-wrapper p {
-    font-size: 16px;
-    line-height: normal;
+  font-size: 17px;
+  line-height: normal;
+  color: rgba(7,7,7,0.7);
 }
 /**********-----------Wiki - END SPONSORS-----------**********/
 
@@ -527,6 +536,22 @@ section.content-wrapper {
   background-position: center;
   background-size: cover;
   opacity: 0.7;
+}
+
+.standard-content {
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.standard-title {
+font-family: 'Crimson Text', serif;
+ font-weight: 600;
+ font-size: 36px;
+ color: rgb(30,30,30);
+ margin-bottom: 10px;
+ line-height: normal;
+ margin-top: 50px;
 }
 
 .caption {
