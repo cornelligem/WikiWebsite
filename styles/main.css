@@ -587,6 +587,16 @@ font-family: 'Crimson Text', serif;
   margin-bottom: 30px;
 }
 
+.content-statement {
+  text-align: center;
+  font-style: italic;
+  padding: 0 100px;
+}
+
+.content-contacts {
+  text-align: center;
+}
+
 .timeline-button-wrapper {
   /*centers timeline buttons*/
   margin-left: auto;
@@ -641,8 +651,8 @@ font-family: 'Crimson Text', serif;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  height: 925px;
+  transform: translate(-50%, -45%);
+  height: 900px;
   width: 1.5px;
   background: #808080;
   z-index: 1;
