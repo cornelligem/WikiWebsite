@@ -637,6 +637,17 @@ font-family: 'Crimson Text', serif;
   text-align: center;
 }
 
+.tab-subheader {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+}
+
+.tab-key-takeaways {
+  text-align: left;
+  text-decoration-style: dotted;
+}
+
 .tab-content {
   padding: 0 175px;
   font-size: 16px;
@@ -644,6 +655,9 @@ font-family: 'Crimson Text', serif;
   line-height: normal;
 }
 
+.tab-content p {
+  opacity: 0.5;
+}
 /********************************* Wiki - END PRACTICES PAGE: TABS  ********************************/
 
 /********************************* Wiki - PRACTICES PAGE: TIMELINE  ********************************/
@@ -714,6 +728,14 @@ font-family: 'Crimson Text', serif;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+}
+
+.urban-info {
+  margin-top: 50px;
+  padding: 0 100px;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
 }
 
 /********************************* Wiki - END PRACTICES PAGE: TIMELINE  ********************************/
