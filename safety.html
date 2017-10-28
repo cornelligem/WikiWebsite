@@ -3,25 +3,63 @@
 <html class="no-js">
 
 <style> /********************************* WIKI RESET  ********************************/
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700%7CSource+Sans+Pro:400,700%7CMontserrat:500');
+    #sideMenu, #top_title {
+      display:none;
+    }
+    #content {
+      padding:0px;
+      width:100% !important;
+      margin-top:-26px;
+      margin-left:0px ;
+      font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+    }
+    body {
+      background-color: black;
+      font-family:"Crimson Text", "Source Sans Pro", Montserrat, sans-serif; !important;
+    }
+    #bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 {
+      font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+    }
+#HQ_page .bios-banner-caption {
+  text-align: center; !important;
+  font-family: 'Crimson Text', serif; !important;
+  font-size: 65px; !important;
+}
 
-#sideMenu, #top_title {
-    display:none;
+#HQ_page p {
+  font-family: 'Crimson Text', serif;
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: left;
+  color: rgba(7,7,7,0.7);
+  line-height: normal;
 }
-#content {
-    padding:0px;
-    width:100% !important;
-    margin-top:-26px;
-    margin-left:0px ;
-    font-family:"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+
+#HQ_page .bio-title {
+font-size: 36px; !important;
 }
-body {
-    background-color: black;
-    font-family:"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+
+#HQ_page .bio-subtitle {
+font-size: 24px; !important;
 }
-#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 {
-     font-family:"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; !important;
+
+#HQ_page .sponsors-title {
+margin: 100px 0; !important;
+  text-align: center; !important;
+  font-size: 65px; !important;
 }
-}</style>
+
+a:visited {
+  color: #000000;
+}
+
+.mw-content-ltr ul, .mw-content-rtl .mw-content-ltr ul {
+   margin: 0;
+   padding: 0;
+}
+</style>
 
     <head>
       <meta charset="UTF-8">
@@ -32,7 +70,7 @@ body {
       <!--Stylesheets-->
       <link rel="stylesheet" href="http://2017.igem.org/Team:Cornell/bootstrapCSS?action=raw&ctype=text/css">
       <link rel="stylesheet" href="http://2017.igem.org/Team:Cornell/styles?action=raw&ctype=text/css"> <!--For nav bar text-->
-      <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="http://2017.igem.org/Team:Cornell/mainCSS?action=raw&ctype=text/css">
       <!-- JavaScript Files-->
       <script src="http://2017.igem.org/Team:Cornell/jquerymin?action=raw&ctype=text/javascript" type="text/javascript"></script>
       <script src="http://2017.igem.org/Team:Cornell/mainJS?action=raw&ctype=text/javascript" type="text/javascript"></script>
@@ -104,70 +142,6 @@ body {
                   </ul>
               </li>
             </ul>
-            <ul class="nav-main-menu small-screen">
-              <li><a href="http://2017.igem.org/Team:Cornell/home">HOME</a></li>
-              <li><a href="http://2017.igem.org/Team:Cornell/Description">ABOUT</a>
-              </li>
-              <li><a href="#">TOOLKIT</a>
-                <ul>
-                  <li><a href="#">WET LAB</a>
-                    <ul>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Proof">HYDROSENSE</a></li>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Parts">PARTS</a></li>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Protocol">PROTOCOLS</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">PRODUCT DEVELOPMENT</a>
-                    <ul>
-                      <li><a href="http://2017.igem.org/Team:Cornell/productdevoverview">OVERVIEW</a></li>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Hardware">OXYPONICS SYSTEM</a></li>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Software">DASHBOARD</a></li>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Design">DESIGN PROCESS</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">MATHEMATICAL MODELING</a>
-                    <ul>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Model">MODELING</a></li>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Animation">ANIMATION</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">DOCUMENTATION</a>
-                    <ul>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Safety">SAFETY</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#">HUMAN CENTERED DESIGN</a>
-                <ul>
-                  <li><a href="http://2017.igem.org/Team:Cornell/HP/Gold_Integrated">PRACTICES</a></li>
-                  <li><a href="http://2017.igem.org/Team:Cornell/Policies">POLICIES</a></li>
-                  <li><a href="http://2017.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">OUTREACH</a>
-                <ul>
-                  <li><a href="http://2017.igem.org/Team:Cornell/Connections">CONNECTIONS</a></li>
-                  <li><a href="http://2017.igem.org/Team:Cornell/Engagement">PUBLIC ENGAGEMENT</a></li>
-                </ul>
-              </li>
-              <li><a href="http://2017.igem.org/Team:Cornell/Team">TEAM</a>
-                <ul>
-                  <li><a href="http://2017.igem.org/Team:Cornell/Team">BIOS</a></li>
-                  <li><a href="http://2017.igem.org/Team:Cornell/Sponsors">SPONSORS</a></li>
-                  <li><a href="http://2017.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a></li>
-                  <li><a href="">OFFICIAL PROFILE</a></li>
-                  </ul>
-              </li>
-            </ul>
-            <div class="nav-hamburger-wrapper">
-              <div class="cell-vertical-wrapper">
-                <div class="cell-middle">
-                  <div class="nav-hamburger"><span></span></div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </nav>
@@ -187,111 +161,97 @@ body {
   <div class="row top">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
-      <div class="content-title center">OVERVIEW </div>
-      <div class="notebookp">
-        Cornell iGEM understands the inherent risks of working in a lab facility and aims to take all necessary precautions to ensure no personal or environmental harm occurs. To this end, we have implemented the following safety procedures below. Our completed safety form can be found
-        <b><a href="http://2015.igem.org/Safety/Final_Safety_Form?team_id=1595"> here.</a></b>
-      </div>
+      <div class="content-title center no-subtitle no-margin-top no-margin-top">OVERVIEW </div>
+      <p>Cornell iGEM understands the inherent risks of working in a lab facility and aims to take all necessary precautions to ensure no personal or environmental harm occurs. To this end, we have implemented the following safety procedures below. Our completed safety form can be found
+        <a class="link"href="http://2015.igem.org/Safety/Final_Safety_Form?team_id=1595"> here</a>.
+      </p>
     </div>
     <div class="col-sm-1"></div>
   </div> <!-- row -->
   <div class="row gray">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
-      <div class="content-title center">SPECIFIC SAFETY CONCERNS</div>
-      <div class="notebookp">
-      <b>Laboratory Safety:</b> Our project involves regular use of ethidium bromide, a DNA-intercalating agent known to cause cancer, as well as the use of powerful UV light, for visualization of gel electrophoresis. We must prepare culture media with antibiotics, which could be harmful to humans in large doses. We also work with ethanol lamps to maintain a sterile environment, which do involve having an open flame on the benchtop.
-      </div>
+      <div class="content-title center no-subtitle no-margin-top">SPECIFIC SAFETY CONCERNS</div>
+      <p><b>Laboratory Safety:</b> Our project involves regular use of ethidium bromide, a DNA-intercalating agent known to cause cancer, as well as the use of powerful UV light, for visualization of gel electrophoresis. We must prepare culture media with antibiotics, which could be harmful to humans in large doses. We also work with ethanol lamps to maintain a sterile environment, which do involve having an open flame on the benchtop.
+      </p>
 
-      <div class="notebookp">
-      <b>Environmental Safety:</b> If any biological materials escape from the lab there is a risk of transfer of antibiotic resistance from our engineered strains into other organisms. The ozone used to induce oxidative stress in plants could escape to the environment and endanger animal and plant life.
-      </div>
+      <p><b>Environmental Safety:</b> If any biological materials escape from the lab there is a risk of transfer of antibiotic resistance from our engineered strains into other organisms. The ozone used to induce oxidative stress in plants could escape to the environment and endanger animal and plant life.
+      </p>
 
-      <div class="notebookp">
-      <b>Pathogens in Lab:</b> We are mainly working with E. coli in the lab space. E. coli is found in the human gut flora, but also has been widely used by iGEM teams for cloning purposes and is categorized as Biosafety Level 1.
-      </div>
+      <p><b>Pathogens in Lab:</b> We are mainly working with E. coli in the lab space. E. coli is found in the human gut flora, but also has been widely used by iGEM teams for cloning purposes and is categorized as Biosafety Level 1.
+      </p>
 
-      <div class="notebookp">
-      <b>Oxidants in Lab:</b> We are working with ozone to induce oxidative stress in hydroponically-grown plants. Ozone can cause damage to respiratory tissue if inhaled and is thus a respiratory hazard in high concentrations.
-      </div>
+      <p><b>Oxidants in Lab:</b> We are working with ozone to induce oxidative stress in hydroponically-grown plants. Ozone can cause damage to respiratory tissue if inhaled and is thus a respiratory hazard in high concentrations.
+      </p>
     </div>
     <div class="col-sm-1"></div>
   </div> <!-- row -->
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
-      <div class="content-title center">SAFETY PROTOCOL</div>
-      <div class="notebookp">
+      <div class="content-title center no-subtitle no-margin-top">SAFETY PROTOCOL</div>
+      <p>
         <b>Wet Lab:</b> All lab members wear nitrile gloves, closed-toe shoes, and use eye protection when working with volatile chemicals or UV light. Gloves are replaced and hands are washed immediately after using ethidium bromide or any of the metal solutions. Members work in small groups to ensure if any harm comes to one, others are there to assist. When working with a new reagent or piece of equipment, a faculty lab manager or experienced member is always present to assist.
-      </div>
-      <div class="notebookp">
+      </p>
+      <p>
         There are taped off, designated areas for working with ethidium bromide. These areas are cleaned before and after work and are the only areas the solution may touch. All toxic waste is placed in a specialized receptacle and is picked up and disposed of by Cornell Environmental Health and Safety.
-      </div>
-      <div class="notebookp">
+      </p>
+      <p>
         All disposables that come in contact with biologics are disposed of in biohazard waste. The lab space also contains sharps containers for disposal of all sharps that contact biological material. All biohazard waste is autoclaved and transported to the building's centralized waste facility where it is disposed of as regulated biological waste.
-      </div>
-      <div class="notebookp">
+      </p>
+      <p>
         We maintain 2 copies of MSDS's for every chemical we use in the lab: one for our own records and one for the lab manager and users of the lab space who are not part of our team. The lab is equipped with flame-retardant benches, spill kits, safety showers, eye-washes, and fire extinguishers.
-      </div>
-      <div class="notebookp">
+      </p>
+      <p>
         <b>Dry Lab:</b> We use the Emerson Machine Shop and the Rev facility for fabrication; each of the dry lab subteam members has attended the prescribed training session for use of the shop and has learned to use each of the tools safely. The dry lab subteam lead led intensive trainings for our workspace including the 3D printer, drill, and other tools. Each member of the dry lab subteam was also trained in the safe usage of the milling machine and the metal lathe.
-      </div>
-      <div class="notebookp">
+      </p>
+      <p>
         All machine shop work is conducted under the supervision of the Emerson machine shop or Rev staff. Safety goggles were worn at all times. Masks and gloves are worn as appropriate. Closed-toe shoes and long pants were also worn when working in the machine shop. While working in the machine shop we maintained a clean work environment so we could maintain visibility at all times. When lifting heavy objects, proper lifting technique was used, and an appropriate number of individuals were used for lifting said objects.
-      </div>
-      <div class="notebookp"> All members are required to clean up the office space after use, sweeping up sawdust and putting away any tools used.  Nothing in the office can obstruct the yellow lines taped off to mark off a clear path through our workspace.  Any items borrowed from one space must be put back where they came from.
-      </div>
-      <div class="notebookp"> A buddy system was to ensure the safety of members when they work in the lab spaces during off hours. Any dangerous incidents that occur are taken seriously, and precautions are implemented for future work.  The team’s designated safety officer reviews all spaces and informs the team each week if there are any possible unsafe situations that need to be fixed.
-      </div>
+      </p>
+      <p> All members are required to clean up the office space after use, sweeping up sawdust and putting away any tools used.  Nothing in the office can obstruct the yellow lines taped off to mark off a clear path through our workspace.  Any items borrowed from one space must be put back where they came from.
+      </p>
+      <p> A buddy system was to ensure the safety of members when they work in the lab spaces during off hours. Any dangerous incidents that occur are taken seriously, and precautions are implemented for future work.  The team’s designated safety officer reviews all spaces and informs the team each week if there are any possible unsafe situations that need to be fixed.
+      </p>
     </div>
     <div class="col-sm-1"></div>
   </div> <!-- row -->
   <div class="row gray">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
-      <div class="content-title center">TRAINING AND ENFORCEMENT</div>
-      <div class="notebookp">
-        <b>Training:</b> All team members who work in the wet lab must complete Cornell EH&S general lab safety and chemical waste disposal courses prior to the onset of work. These courses set specific guidelines and are the standard requirement for work in a biosafety-level 1 lab at Cornell. Additionally, all team members must complete a lab orientation session with the manager of the BME instructional lab, Dr. Shivaun Archer. During these sessions, Dr. Archer familiarizes new members with the safety equipment and procedures specific to the labspace in which we work.
-      </div>
-      <div class="notebookp">
-        Prior to the onset of work for the year, all new members are required to go through a safety training program. During this program, safety officers reinforce safety procedures learned during the EH&S courses, discuss safety protocol pertaining to specific chemicals with which we work, and ensure all lab members fully understand all safety procedures.
-      </div>
-
-      <div class="notebookp">
-          <b>Safety Officers: </b>The safety officers were team members chosen to directly supervise the activities of the other team members. One team member each was chosen for the wet and dry lab subteams to ensure that all team members were working safely, whether with bacterial cultures or power tools. These team members also act as liaisons to the wet lab and machine shop managers and, when necessary, the <b><a href="http://www.ibc.cornell.edu/"> Institutional Biosafety Committee</a></b>  to ensure proper equipment usage.
-      </div>
-
-      <div class="notebookp">
-          These team members are responsible for discussing the proposed work plan for the project with the wet lab and machine shop managers before starting work to ensure that it is safe to continue. In the case of the wet lab in particular, this involves going through a detailed list of protocols, including all organisms, chemicals, and genetic constructs being worked with, to ensure conformity with the <b><a href="https://sp.ehs.cornell.edu/lab-research-safety/bios/biological-safety-manuals/Pages/default.aspx"> Environmental Health &amp; Safety guidelines</a>.</b> They must go through the same safety training as all other team members, but are required to redo the training each time we recruit new members in order to keep up-to-date with safety considerations. In addition, they maintain contact with the supervisors of the workspaces, usually in the form of a weekly check-in, to discuss any safety concerns that have arisen and ensure that equipment continues to be used properly.
-      </div>
-
-      <div class="notebookp">
-        <b> Enforcement:</b> Team members who violate safety rules are required to work under the supervision of the safety officers for the remainder of the week, or until the safety officer believes the member is capable of performing the task unsupervised. For multiple infractions or complete disregard to safety protocols, a member may be restricted from laboratory work until he/she undergoes EHS chemical safety online training again, and demonstrates proper performance to a team leader of failed technique(s) in a controlled setting.
-      </div>
+      <div class="content-title center no-subtitle no-margin-top">TRAINING AND ENFORCEMENT</div>
+      <p><b>Training:</b> All team members who work in the wet lab must complete Cornell EH&S general lab safety and chemical waste disposal courses prior to the onset of work. These courses set specific guidelines and are the standard requirement for work in a biosafety-level 1 lab at Cornell. Additionally, all team members must complete a lab orientation session with the manager of the BME instructional lab, Dr. Shivaun Archer. During these sessions, Dr. Archer familiarizes new members with the safety equipment and procedures specific to the labspace in which we work.
+      </p>
+      <p>Prior to the onset of work for the year, all new members are required to go through a safety training program. During this program, safety officers reinforce safety procedures learned during the EH&S courses, discuss safety protocol pertaining to specific chemicals with which we work, and ensure all lab members fully understand all safety procedures.
+      </p>
+      <p><b>Safety Officers: </b>The safety officers were team members chosen to directly supervise the activities of the other team members. One team member each was chosen for the wet and dry lab subteams to ensure that all team members were working safely, whether with bacterial cultures or power tools. These team members also act as liaisons to the wet lab and machine shop managers and, when necessary, the <a class="link"href="http://www.ibc.cornell.edu/"> Institutional Biosafety Committee</a>  to ensure proper equipment usage.
+      </p>
+      <p>These team members are responsible for discussing the proposed work plan for the project with the wet lab and machine shop managers before starting work to ensure that it is safe to continue. In the case of the wet lab in particular, this involves going through a detailed list of protocols, including all organisms, chemicals, and genetic constructs being worked with, to ensure conformity with the <a class="link" href="https://sp.ehs.cornell.edu/lab-research-safety/bios/biological-safety-manuals/Pages/default.aspx"> Environmental Health &amp; Safety guidelines</a>. They must go through the same safety training as all other team members, but are required to redo the training each time we recruit new members in order to keep up-to-date with safety considerations. In addition, they maintain contact with the supervisors of the workspaces, usually in the form of a weekly check-in, to discuss any safety concerns that have arisen and ensure that equipment continues to be used properly.
+      </p>
+      <p><b> Enforcement:</b> Team members who violate safety rules are required to work under the supervision of the safety officers for the remainder of the week, or until the safety officer believes the member is capable of performing the task unsupervised. For multiple infractions or complete disregard to safety protocols, a member may be restricted from laboratory work until he/she undergoes EHS chemical safety online training again, and demonstrates proper performance to a team leader of failed technique(s) in a controlled setting.
+      </<p>>
     </div>
     <div class="col-sm-1"></div>
   </div> <!-- row -->
 </section>
     <!------------------------END CONTENT------------------------>
 
-
     <!------------------------FOOTER------------------------>
-    <footer class="footer-preset-04 footer bgc-gray">
+    <footer class="footer-preset-04 footer bgc-white">
         <div class="social-04">
             <a class="footerIconWrapper" href="https://www.facebook.com/cornelligem/">
                 <div class="overlay"></div>
-                <img src="images/cornellFacebookIcon.png" alt="Facebook" height="20"></a>
+                <img src="http://2017.igem.org/wiki/images/0/0b/CornellFacebookIcon.png" alt="Facebook" height="20"></a>
             <a class="footerIconWrapper" href="https://twitter.com/cugem">
                 <div class="overlay"></div>
-                <img src="images/cornellTwitterIcon.png" alt="Twitter" height="20">
+                <img src="http://2017.igem.org/wiki/images/5/50/CornellTwitterIcon.png" alt="Twitter" height="20">
             </a>
             <a class="footerIconWrapper" href="https://www.instagram.com/cugem/">
                 <div class="overlay"></div>
-                <img src="images/cornellInstagramIcon.png" alt="Instagram" height="20">
+                <img src="http://2017.igem.org/wiki/images/3/36/CornellInstagramIcon.png" alt="Instagram" height="20">
             </a>
             <a class="footerIconWrapper" href="https://www.youtube.com/channel/UCJt-5JfyoucUJXC1EsTllhg">
                 <div class="overlay"></div>
-                <img src="images/cornellYoutubeIcon.png" alt="Youtube" height="20">
+                <img src="http://2017.igem.org/wiki/images/5/50/CornellYoutubeIcon.png" alt="Youtube" height="20">
             </a>
         </div>
     </footer>

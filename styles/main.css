@@ -299,6 +299,10 @@ ul.nav-main-menu.nav-content-item li {
   font-weight: 600;
 }
 
+.no-margin-top {
+  margin-top: 0px;
+}
+
 .bullet-list li {
   list-style: circle;
   margin-left: 30px;
