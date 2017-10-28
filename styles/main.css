@@ -939,7 +939,7 @@ font-family: 'Crimson Text', serif;
   display: block;
   margin: 0 auto;
   padding-top: 25px;
-  width: 80%;
+  width: 100%;
 }
 
 .date {
@@ -957,12 +957,14 @@ font-family: 'Crimson Text', serif;
 }
 
 .timeline-content-left {
-  padding-right: 25px;
+  /*padding-right: 25px;*/
+  padding-left: 0;
   text-align: right;
 }
 
 .timeline-content-right {
-  padding-left: 25px;
+  /*padding-left: 25px;*/
+  padding-right: 0;
 }
 
 .marker {
