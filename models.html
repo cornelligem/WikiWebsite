@@ -146,9 +146,9 @@ a:visited {
     <main>
    <!------------------------END NAV BAR------------------------>
       <!------------------------BANNER------------------------>
-      <header class="container-fluid banner-wrapper banner-photo-wetlab">
+      <header class="container-fluid banner-wrapper banner-photo-models">
         <div class="caption">
-          Wet Lab
+          Models
         </div>
       </header>
       <!------------------------END BANNER------------------------>
@@ -160,10 +160,9 @@ a:visited {
               <div class="col-xs-2 sidebar">
                 <ul class="sidebar-wrapper">
                     <li><a href="#overview">OVERVIEW</a></li>
-                    <li><a href="#biobricks">BIOBRICKS</a></li>
-                    <li><a href="#chassis">CHASSIS</a></li>
-                    <li><a href="#results">RESULTS</a></li>
-                    <li><a href="#futurework">FUTURE WORK</a></li>
+                    <li><a href="#biobricks">CAD SIMULATIONS</a></li>
+                    <li><a href="#chassis">CAMERA FEEDBACK</a></li>
+                    <li><a href="#results">MASS TRANSFER</a></li>
                     <li><a href="#references">REFERENCES</a></li>
                 </ul>
               </div>
@@ -171,23 +170,63 @@ a:visited {
                 <!-- Page Content -->
                 <div class="col-xs-8 standard-content">
                        <div class="content-title"><a id="overview">OVERVIEW</a></div>
-                          <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
+                          <p>It is imperative for Product Development to design our products through an iterative process, ensuring that what we produce is something that our customers will love.  Before we machine or build anything, we tested our concepts using Autodesk Fusion 360 for designing and Makerbot Replicator Printer for 3D printing, giving us a better idea of how we want to scale our idea.  We also developed a model for the mass transfer through our dialysis tubing that holds the bacteria using COMSOL.  This model allowed us to determine whether or not our concept of breaking down the oxidative stress could be accomplished in a reasonable amount of time.
                           </p>
-                       <div class="content-title"><a id="biobricks">BIOBRICKS</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
+                       <div class="content-title"><a id="biobricks">CAD SIMULATIONS</a></div>
+                         <p>All prototypes were designed and animated using Fusion 360, proving the feasibility of our concepts and measurements.  Fusion 360 also allows us to visualize how our idea operates and gives us the ability to show our customers what they can expect from our project.  All prints were fabricated in either RPL or from our own Makerbot.  
                          </p>
-                       <div class="content-title"><a id="chassis">CHASSIS</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
+                       <div class="content-title"><a id="chassis">CAMERA FEEDBACK</a></div>
+                         <p>The pDawn pathway has a lag time of approximately 2 hours, and the response curve is hyperbolic in both duration and intensity of applied light, making it very hard to achieve an intermediate response[1].  It is also possible that the 448 nm light we use for exciting rxRFP could result in some activation of pDawn.  These conditions are not conducive towards a simple negative feedback loop, where the system simply responds to the current redox potential to determine the feedback signal, hoping to eventually bracket the desired potential.  This would result in a severely underdamped system, which would take several days to converge, if it converged at all.  A simple proportional-integral-derivative (PID) system would be an improvement, but still wouldn’t be able to handle the lag time without extra components..</p>
+
+                        <p>We want to develop a program for the desired feedback signal at any given time, ideally creating something that is close to critically damped.  After initial expression to approach the correct level, maintenance can be done with a simple feedback loop.  This requires solving a nonlinear delay differential equation, something that is quite hard.  Instead of trying to find a closed form solution, we instead model the system and numerically optimize to derive the feedback function.</p>
+
+                        <p>An easier, although slightly less efficient method, is to determine the light signal required to create a small shift in oxidative state.  This would give us a vector field that we could follow via gradient descent to reach any given state from the measured one.  The hyperbolic response curve makes it difficult to finely control the feedback, but this can be dealt with by simply using a small gain and approaching the target slower.</p>
+
+                         
+                       <div class="content-title"><a id="results">MASS TRANSFER WITH COMSOL</a></div>
+                         <p>In an ideal world, the ring of bacteria around each plant would produce the right amount of antioxidant for a specific plant species and the antioxidant would not interfere with other plants.  Unfortunately, this is likely not the case, even in a deepwater system with very little water circulation.  In order to maintain this feature and prevent the tank environment from degrading into a homogeneous environment, which would waste our advantage of spatial resolution, we configure the feedback to reach a steady state solution with the correct potential distribution. </p>
+	
+                        <p>In order to accurately analyze the transient behavior, we would also need to fully characterize pDawn.  However, we can simply decouple the exact light feedback functions from the model parameters, solving the model first and extrapolating to illumination feedback levels later.</p>
+
+                        <p>We modeled the diffusion of hydrogen peroxide through a tank of water, with no bulk fluid flow.  Peroxide enters the tank from one of its corners at a rate of 0.001 moles/s (0.1 M at 10 mL/s).  The dialysis tubing membrane was assumed to freely pass peroxide and completely block bacteria.  Peroxide is degraded according to first order kinetics, with a rate constant of 2.4E7 s-1, and the concentration of catalase was held constant [2].  The effect of the plant itself was ignored, and the plant roots were modeled as water.  We also started with an initial peroxide concentration in the tank of 0.1 M, to examine the speed at which it approached steady state.  
                          </p>
-                       <div class="content-title"><a id="results">RESULTS</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
-                         </p>
-                       <div class="content-title"><a id="futurework">FUTURE WORKS</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
-                         </p>
+                    
+                        <p>Our equations are detailed below:
+                        <div class = "image-wrapper">
+                        <img class = "img-responsive" src="http://2017.igem.org/wiki/images/e/e6/T--Cornell--ModelingEquations.png"
+                            alt= "modelequations">
+                        </div>
+                    
+                        <p>The simulation results show that we can indeed reach a steady state concentration in the root area, and that this concentration depends on the enzyme concentration. This relationship is sigmoidal; on a semi-log graph, the linear region ranges between 10-7 mM and 10-6 mM of catalase concentration (Figure 1,2).  The time required to approach steady state is reasonably short, at around 45 minutes (Figure 3).  </p>
+
+                        <p> We were also able to obtain a plot of average peroxide concentration around the plant versus the steady state enzyme concentration, which can be interpolated in order to find the correct input for a desired oxidative potential.  Holding the enzyme concentration steady at this value will guarantee the system reaches the target potential eventually, even if it takes longer than optimal.</p>
+                    
+                        <div class = "image-wrapper">
+                        <img class = "img-responsive" src="http://2017.igem.org/wiki/images/c/c6/Optbroad.png"
+                            alt= "modelfigure1">
+                        </div>
+                        <p>Figure 1: Semi-log graph of steady-state mean peroxide concentration in the area around the plant roots vs. steady-state catalase concentration in the tubing</p>
+                    
+                        <div class = "image-wrapper">
+                        <img class = "img-responsive" src="http://2017.igem.org/wiki/images/f/f8/Optnarrow.png"
+                            alt= "modelfigure2">
+                        </div>
+                        <p>Figure 2: Steady-state mean peroxide concentration around the plant vs. steady-state catalase concentration, enlarged on region between 10<sup>-6</sup>  and 10<sup>-7</sup>  M of catalase.</p>
+                    
+                        <div class = "image-wrapper">
+                        <img class = "img-responsive" src="http://2017.igem.org/wiki/images/6/67/SSPeroxideConcVaryingCatalase.png"
+                            alt= "modelfigure4">
+                        </div>
+                        <p>Figure 4: Distribution of steady state peroxide concentration across bacteria-plant system, varied by amount of catalase enzyme present (A: 1E-8 mM, B: 1E-9 mM, C: 1E-10 mM, D: 6E-10 mM, E: 6E-11 mM)</p>
+                    
                        <div class="content-title"><a id="references">REFERENCES</a></div>
-                         <p>Oxyponics was conceived in the summer of 2017 by Cornell iGEM -  a synthetic biology engineering project team composed of 36 undergraduate students. The company created a toolkit to optimize redox state by controlling the amount of reactive oxygen species in the environment. Utilizing the research conducted by the team throughout 2017, Oxyponics created a novel biosensor that couples a redox-sensitive fluorescent protein and an optogenetic circuit to a spectrometric receiver. This allows for a dual reporter-response functionality that greatly enhances versatility and sensitivity over traditional biosensor systems. With the development of an effective large-scale sensing system to monitor plants and track data, the optimal level of oxidative stress that can be determined for the plant systems. Members of the team communicated with local farmers to learn more about Through the feedback of farmers themselves, we created Oxyponics, which couples fluorescent bacteria with a camera-rail system for imaging, to provide exactly the large-scale blanket-type sensing that conventional redox probes cannot.
-                         </p>
+                         <p>[1] Ohlendorf, R., Vidavski, R. R., Eldar, A., Moffat, K., & Möglich, A. (2012). From dusk till dawn: one-plasmid systems for light-regulated gene expression. Journal of molecular biology, 416(4), 534-542. Retrieved from https://www.biologie.hu-berlin.de/de/gruppenseiten/systher/biophyschem/papers/Ohlendorf_JMB2012.pdf.</p>
+
+                        <p>[2] Greenfield, R. E., & Price, V. E. (1954). Liver catalase I. A manometric determination of catalase activity. Journal of Biological Chemistry, 209(1), 355-361.</p>
+
+                        <p>[3] Datta, A. & Rakesh, V. (2010). An Introduction to Modeling of Transport Processes: Applications to Biomedical Systems. Cambridge University Press</p>
+
+                         
 
                    </div>
 
