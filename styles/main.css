@@ -302,6 +302,10 @@ ul.nav-main-menu.nav-content-item li {
   font-weight: 600;
 }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
 .no-margin-top {
   margin-top: 0px;
 }

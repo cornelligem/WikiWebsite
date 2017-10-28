@@ -169,12 +169,15 @@ a:visited {
 
                 <!-- Page Content -->
                 <div class="col-xs-8 standard-content">
-                       <div class="content-title"><a id="overview">Overview</a></div>
+                       <div class="content-title top"><a id="overview">Overview</a></div>
                           <p>
-                            In the hydroponics industry today, oxidative stress is not measured due to the price and ineffectiveness of ORP (oxidation-reduction potential) probes. These expensive electrode probes constantly need maintenance and are only occasionally used to ensure that the levels of ROS (reactive oxygen species) are not extreme enough to be harmful to their crops [1]. In addition to being expensive and fragile, these ORP sensors can only take a measurement at one point out of the large deep-water systems and require the farmer to manually take measurements [2].
+                            Cornell iGEM’s OxyPonics system is designed to maximize the practical capabilities of our powerful biosensor using Wetlab’s engineered redox sensitive proteins. Focusing on industrial hydroponics, an industry critical to the future of food security and urban revitalization, we developed a system so that farmers could better control the environmental conditions crucial to their businesses. Farmers currently only control for the pH and nutrient content of their water. Our three-part system with bacteria, sensor, and Internet of Things (IoT) hardware integration allows farmers to optimize crop growth by manipulating a variable currently unheard of in the industry today: oxidative stress.
                           </p>
                           <p>
-                            Our solution, OxyPonics, would be able to measure and respond to the oxidative stress in the water by adjusting the redox environment to optimal growing conditions. In addition, it is an automated system that can take measurements of whole tanks continuously.
+                            If farmers today wanted to optimize for their redox environment, the only option on the market is using expensive and ineffective ORP (oxidation-reduction potential) probes, which are not specifically designed for this application. These expensive electrode probes constantly need maintenance and are only occasionally used to ensure that the levels of ROS (reactive oxygen species) are not extreme enough to be harmful to their crops [1]. In addition to being expensive and fragile, these ORP sensors can only take a measurement at one point out of large deep-water systems and require the farmer to manually take measurements [2].
+                          </p>
+                          <p>
+                            Our solution, OxyPonics, is able to measure and respond to the oxidative stress in the water by adjusting the redox environment to optimal growing conditions completely autonomously. We change water conditions depending on the crop variety and stage of growth. This allows for larger, healthier crops, and the ability for farmers to expand their operations and compete with traditional soil-based farms. Our dashboard takes in external sensor data and automatically generates alerts and reports, enabling farmers to track real time data on their facility. Through further testing and certification, the OxyPonics system has the potential to become an industry standard in hydroponics, much like current automated systems for pH and nutrient levels.
                           </p>
                        <div class="content-title"><a id="hardware">Hardware</a></div>
                          <p>The hardware of the OxyPonics system is not a replacement, but rather an integrable system that consists of an optical sensor to detect the plants’ aquatic environment, a railing system to transport the sensor throughout the tank, and modified planter cups to safely hold the bacteria close to the plants.
@@ -193,10 +196,15 @@ a:visited {
                        <div class="content-subtitle"><a id="system">Railing System</a></div>
                          <p>The railing is placed along the bottom of a traditional deep water culture tank and is used to mount the sensor enclosure. This enclosure utilizes a clear aperture and servos to maximize the exposure area of the light module when it is determined that the pDawn needs to be activated.
                          </p>
+                         <div class="image-wrapper-grid">
+                          <div class="row">
+                             <div class="col-md-6 center"><embed width="100%" height="400px" src="http://2017.igem.org/wiki/images/a/a1/T--Cornell--R_Rail2.mp4"></div>
+                             <div class="col-md-6 center"><embed width="100%" height="400px" src="http://2017.igem.org/wiki/images/6/6b/T--Cornell--R_Rail1.mp4"></div>
+                          </div> <!--row-->
                          <p>The mobile part of the railing system is clipped along the side of the deep water culture tank, without contact with the body of water. The wheels are in contact with the outer wall of the tank and will be operated by a motor that can be controlled manually. The bars connected with the mobile area of the railing system will be crossing each other underwater, connected with a mount with a cross-shaped slot that allows it to travel along with the movement of the wheels outside the tank. The location of the camera will be known by keeping track of the distance the wheels traveled from the origin, which is the center of the water culture tank. A waterproof case that hold the sensor will be attached to the mount and move across the tank as the mount moves with the rail.
                          </p>
-                         <div class="image-wrapper">
-                           <img class="img-responsive" src="http://2017.igem.org/wiki/images/f/fc/Hydroponics_Bed_CAD.png" alt="Hydroponics Bed CAD"/>
+                         <div class="image-wrapper center">
+                           <embed width="500" height="250" src="http://2017.igem.org/wiki/images/2/29/PD_Everything.mp4">
                          </div>
                        <div class="content-subtitle"><a id="communication">Communication Between Sensors</a></div>
                           <p>Each tank gets a single Raspberry Pi. The Raspberry Pis are all connected to the local internet network present in the greenhouse via Ethernet, because wireless signals do not travel well in water [6].  Data is uploaded to the central server as it is generated to provide farmers with accurate data.
