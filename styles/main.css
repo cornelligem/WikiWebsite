@@ -868,6 +868,17 @@ font-family: 'Crimson Text', serif;
 }
 
 /**********-----------Wiki - END APPLIED DESIGN-----------**********/
+/**********-----------Wiki - PUBLIC ENGAGEMENT-----------**********/
+.image-wrapper-grid .row {
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+.image-wrapper-grid .row div img {
+  min-width: 100%;
+}
+
+/**********-----------Wiki - END PUBLIC ENGAGEMENT-----------**********/
 /**********-----------Wiki - FOOTER-----------**********/
 .footerTitle {
     margin-top: 10px;
