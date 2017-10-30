@@ -87,7 +87,7 @@ a:visited {
           <div class="container">
             <div class="nav-logo">
                 <a href="http://2017.igem.org/Team:Cornell"><img src="http://2017.igem.org/wiki/images/1/1d/CornellOxyponicsLogo.png" alt="Oxyponics"></a>
-            </div>
+            </div> <!--nav-logo-->
             <ul class="nav-main-menu nav-content-item">
               <li><a href="http://2017.igem.org/Team:Cornell">HOME</a></li>
               <li><a href="http://2017.igem.org/Team:Cornell/Description">ABOUT</a></li>
@@ -95,10 +95,11 @@ a:visited {
                 <ul class="mega-menu-content">
                   <li class="menu-title"><a href="#">WET LAB</a>
                     <ul>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Experiments">HYDROSENSE</a></li>
+                      <li><a href="http://2017.igem.org/Team:Cornell/Experiments">FOUNDATIONS</a></li>
+                      <li><a href="http://2017.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
                       <li><a href="http://2017.igem.org/Team:Cornell/Contribution">CONTRIBUTION</a></li>
                       <li><a href="http://2017.igem.org/Team:Cornell/Parts">PARTS</a></li>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Composite_Part">COMPOSITE PARTS</a></li>
+                      <li><a href="http://2017.igem.org/Team:Cornell/Basic_Part">BASIC PARTS</a></li>
                       <li><a href="http://2017.igem.org/Team:Cornell/Protocol">PROTOCOLS</a></li>
                     </ul>
                   </li>
@@ -106,8 +107,8 @@ a:visited {
                     <ul>
                       <li><a href="http://2017.igem.org/Team:Cornell/Design">DESIGN PROCESS</a></li>
                       <li><a href="http://2017.igem.org/Team:Cornell/Applied_Design">APPLIED DESIGN</a></li>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Software">DASHBOARD</a></li>
-                      <li><a href="http://2017.igem.org/Team:Cornell/Model">MODEL</a></li>
+                      <li><a href="http://2017.igem.org/Team:Cornell/Software">SOFTWARE</a></li>
+                      <li><a href="http://2017.igem.org/Team:Cornell/Model">MODELING</a></li>
                     </ul>
                   </li>
                   <li class="menu-title"><a href="#">DOCUMENTATION</a>
@@ -127,28 +128,28 @@ a:visited {
               </li>
               <li><a href="#">OUTREACH</a>
                 <ul>
-                  <li><a href="http://2017.igem.org/Team:Cornell/Connections">CONNECTIONS</a></li>
+                  <li><a href="http://2017.igem.org/Team:Cornell/Collaborations">COLLABORATIONS</a></li>
                   <li><a href="http://2017.igem.org/Team:Cornell/Engagement">PUBLIC ENGAGEMENT</a></li>
                 </ul>
               </li>
               <li><a href="#">TEAM</a>
-                <ul id="bios">
+                <ul>
                   <li><a href="http://2017.igem.org/Team:Cornell/Team">BIOS</a></li>
                   <li><a href="http://2017.igem.org/Team:Cornell/Sponsors">SPONSORS</a></li>
                   <li><a href="http://2017.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a></li>
                   </ul>
               </li>
-            </ul>
-          </div>
-        </div>
+            </ul> <!--nav-content-item-->
+          </div> <!--nav bar container-->
+        </div> <!--main-nav-->
       </nav>
-    </div>
+    </div> <!--main-nav-wrapper-->
     <main>
    <!------------------------END NAV BAR------------------------>
       <!------------------------BANNER------------------------>
       <header class="container-fluid banner-wrapper banner-photo-software">
         <div class="caption">
-          Dashboard
+          Software
         </div>
       </header>
       <!------------------------END BANNER------------------------>
@@ -159,47 +160,32 @@ a:visited {
               <!-- Side bar -->
               <div class="col-xs-2 sidebar">
                 <ul class="sidebar-wrapper">
-                    <li><a href="#overview">OVERVIEW</a></li>
-                    <li><a href="#analytics">INSTANT ANALYTICS</a></li>
-                    <li><a href="#updates">UPDATES &amp; REPORTS</a></li>
-                    <li><a href="#support">MULTI-PLATFORM SUPPORT</a></li>
-                    <li><a href="#references">REFERENCES</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#detection">Detection</a></li>
+                    <li><a href="#signal">Signal Processing</a></li>
+                    <li><a href="#storage">Storage</a></li>
                 </ul>
               </div>
 
                 <!-- Page Content -->
                 <div class="col-xs-8 standard-content">
-                       <div class="content-title"><a id="overview">OVERVIEW</a></div>
-                          <p>Using feedback from hydroponic farmers, we’ve designed a functional way to monitor and display important information about the plants’ environment, providing our users with technology that is simple and easy to use.  The dashboard’s primary purpose is to provide an easily accessible platform that displays information about the hydroponics system’s environment in real-time.  The dashboard will have the capabilities to monitor pH, electrical conductivity, temperature, and oxidative stress, and alert farmers immediately of any imbalances in the system so that they can mitigate any harm to their crops. In order to amplify the impact of this software system, the dashboard will be multi-platform so that it can work on any operating system, including Android, iOS, and Windows.
+                       <div class="content-title top"><a id="overview">Overview</a></div>
+                          <p>In the process of creating our OxyPonics system, we realized we needed to make a cheap, flexible, camera system capable of quantifying and localizing our optical signals. To keep costs low, we built our system out of a ten dollar camera and a Raspberry Pi.. This allows us to properly image and track fluorescence to a reasonable degree without the need for expensive lab equipment like plate readers or spectrofluorometers. Using OpenCV, an open-source package for computer vision, we created software to track the fluorescent signal in our frame, efficiently eliminate noise, and record and send the measured intensity to a web server which tracks the readings. While our optics are designed for rxRFP, our software works for any wavelength and is capable of cheaply identifying and quantifying localized fluorescence in a wide variety of environments, providing a powerful tool for labs on a budget. Our software can be accessed <a class="link" href="https://github.com/Cornell-iGEM/iGEM-Detection">here</a>.
                           </p>
-                       <div class="content-title"><a id="analytics">Instant Analytics</a></div>
-                         <p>The dashboard provides farmers with real-time data on the state of their crops around the clock. Unlike current automation systems, OxyPonics measures both oxidative stress and other standard variables monitored in a plant’s environment, allowing for better control and improved yields. Once there is a change in the hydroponic system, the dashboard will notify the farmer and give them the opportunity to change any necessary settings at their convenience to ensure their crops are growing in a robust environment. The system operates similarly to competitive systems, but incorporates additional features and is redesigned for a farmer’s perspective.</p>
-                         <p>We designed our product with farmers in mind by making a system that is more user friendly than existing dashboards and easier for growers to read analytics and locate specific growth issues. Since farmers struggle to navigate through current dashboards, stats and graphs are allocated into separate tabs to prevent any clutter of various analytics.  Each measured variable in the crops’ environment is visually distinct from other measured data.</p>
-                         <p>With its capability to provide instant analytics, the dashboard offers incredible functionality and versatility with more data presented in a simpler and friendlier form for hydroponic growers.</p>
-                         <div class="image-wrapper">
-                           <img class="img-responsive" src="http://2017.igem.org/wiki/images/f/f4/T--Cornell--DashboardAnalytics.png" alt="analytics"/>
-                         </div>
-
-                       <div class="content-title"><a id="updates">Updates &amp; Reports</a></div>
-                         <p>OIn addition to instant analytics, the dashboard provides farmers instant updates on the state of their crops at any time and allows for immediate action to be taken if necessary. The dashboard compiles data collected behind the scenes and translates it into reports. In our interviews with farmers, they wish to have all types of analytics and documentation available, but they prefer to display only specific analytics. Other systems tend to show stats, graphs, and reports aggregated together, which makes it difficult for farmers to quickly go through the information presented. The Oxyponics dashboard not only separates reports from the statistics, but also displays each analytic in its own respective tab.
+                       <div class="content-title"><a id="detection">Detection</a></div>
+                         <p>Our fluorescence signal comes in the form of an image from our camera.  While the optical filter on the camera removes most of the stray and excitation light, there is still a noticeable background.  To account for this, we mask the image for only the color range of the fluorescent light, which blocks out background from other parts of the image.  We then find contours in this mask to locate position of the fluorescence, and integrate over this contour to find the average fluorescence intensity.  Our software automatically records measurements at various excitation intensities and records this information to a log file; a slight modification (commented) allows it to send this data to a remote web server as well. If users choose to use the full automation of the software, users only need to set the data once, freeing them to perform other tasks while still examining the data in real time.
                          </p>
-                         <p>Abundant information can be useful to have, but it can be overwhelming for users. Our dashboard allows farmers to choose what they see on their dashboard, reducing time wasted searching for certain data and increasing efficiency to run their businesses successfully.
+                       <div class="content-title"><a id="signal">Signal Processing</a></div>
+                         <p>We implemented a rudimentary Kalman filter in order to process our data.  The base code came from <a class="link" src"http://scipy-cookbook.readthedocs.io/items/KalmanFiltering.html">here</a>, but was modified to use our actual measurements and incorporate our model.  It was also generalized to work for a vector state variable.
                          </p>
-                         <div class="image-wrapper">
-                           <img class="img-responsive" src="http://2017.igem.org/wiki/images/5/55/T--Cornell--DashboardGraphs.png" alt="graphs"/>
-                         </div>
-                       <div class="content-title"><a id="support">Multi-Platform Support</a></div>
-                         <p>To make the software easily accessible to farmers, the system's dashboard has multi-platform support. Working on all devices including iOS, Android, and Windows, the system can be smoothly integrated into devices that are familiar to farmers. Because our dashboard is also available on mobile devices, farmers can monitor their plants even when they're outside their greenhouses.
-                         </p>
-                         <div class="content-title"><a id="references">REFERENCES</a></div>
-                         <ol class="references">
-                           <li>Postscapes. (2016). Smart Greenhouse Remote Monitoring Systems. Retrieved from https://www.postscapes.com/wireless-open-source-hydroponics-harvestgeek/</li>
-                         </ol>
-                   </div> <!--standard-content-->
+                      <div class="content-title"><a id="storage">Storage</a></div>
+                        <p>A simple web server implemented in Express with MongoDB allows for remote storage of data as it is collected.  Endpoints for additional data are easy to set up, following the example of the existing ones.  This is useful for when the processing power or storage on the Raspberry Pi is not enough, or when one wants a more permanent backup of the data.
+                        </p>
+                   </div> <!-- end standard-content-->
 
                 <div class="col-xs-1"></div>
-              </div>
-             </div>
+              </div> <!-- end standardPageContent-->
+             </div> <!-- end Sidebar + Content-->
 
              <!------------------------FOOTER------------------------>
               <footer class="footer-preset-04 footer bgc-white">
