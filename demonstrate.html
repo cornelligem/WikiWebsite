@@ -140,12 +140,11 @@ color: #000000;
      <!------------------------END NAV BAR------------------------>
 
         <!------------------------BANNER------------------------>
-        <div class="container-fluid solid-banner-wrapper">
-            <svg width=100% height="300">
-                <rect width=100% height="300" style="fill:rgb(86,113,81);fill-opacity:0.3;" />
-                <text text-anchor="middle" alignment-baseline="middle" x=50% y=50% style="font-family:Crimson Text" font-size="65">Demonstrate</text>
-            </svg>
-        </div>
+        <header class="container-fluid banner-wrapper banner-photo-demonstrate">
+          <div class="caption">
+            Demonstrate
+          </div>
+        </header>
 
         <!------------------------END BANNER------------------------>
         <!------------------------DEMONSTRATE------------------------>
@@ -166,7 +165,7 @@ color: #000000;
           </div>
           <p>This means there will be a constant scaling factor between our ratios for rxRFP and the documented absorption ratios, but our measurements will be internally consistent.  In addition, the contribution of the excitation light is incorporated into our model.
           </p>
-          <p>After confirming that we can collect data, we sought to determine data quality.  There is inherent noise associated with the camera, which compounds with the natural noise present in biological fluorescence [13].  To isolate in the camera, we took a generic red LED and recorded the average intensity across all of those samples.  The resulting distribution reveals significant variation, with a smaller spread than a Gaussian of the same mean and standard deviation.  This is shown in the following figure.
+          <p>After confirming that we can collect data, we sought to determine data quality.  There is inherent noise associated with the camera, which compounds with the natural noise present in biological fluorescence [1].  To isolate in the camera, we took a generic red LED and recorded the average intensity across all of those samples.  The resulting distribution reveals significant variation, with a smaller spread than a Gaussian of the same mean and standard deviation.  This is shown in the following figure.
           </p>
           <div class="image-wrapper">
             <img class="img-responsive" width="80%" src="http://2017.igem.org/wiki/images/e/e5/Screen_Shot_2017-10-29_at_12.48.30_PM.png" alt="Figure 1"/>
@@ -186,7 +185,7 @@ color: #000000;
           <div class="image-wrapper center">
             <img width="75%" src="http://2017.igem.org/wiki/images/7/78/T--Cornell--emission-time.png" alt="emission-time"/>
           </div>
-          <p>We are ultimately interested in determining the oxidative stress of the environment by measuring fluorescence.  The first step in doing this is determining the “true” fluorescence of our system based on our noisy values by using a Kalman filter.  A Kalman filter is an estimator that combines predictions from a known model (in our case, the linear regression we obtained) with observed measurements in order to determine the true state of the measured system.  The prediction provided by the Kalman filter is also the theoretical optimal prediction if the underlying process is linear [14,15].  A further advantage is that the Kalman filter can also predict its internal model parameters, allowing for greater flexibility if baselines cannot be obtained.
+          <p>We are ultimately interested in determining the oxidative stress of the environment by measuring fluorescence.  The first step in doing this is determining the “true” fluorescence of our system based on our noisy values by using a Kalman filter.  A Kalman filter is an estimator that combines predictions from a known model (in our case, the linear regression we obtained) with observed measurements in order to determine the true state of the measured system.  The prediction provided by the Kalman filter is also the theoretical optimal prediction if the underlying process is linear [2,3].  A further advantage is that the Kalman filter can also predict its internal model parameters, allowing for greater flexibility if baselines cannot be obtained.
           </p>
           <p>We compared the Kalman filter to a simple running average for our data at a 42% duty cycle.  The predictions are very similar, varying slightly based on choice of parameters of the Kalman filter.  Why is this the case?
           </p>
@@ -195,6 +194,15 @@ color: #000000;
           <div class="image-wrapper center">
             <img width="75%" src="http://2017.igem.org/wiki/images/0/04/T--Cornell--Kalman-Results.png" alt="Kalman-Results" />
           </div>
+          <div class="content-title">References</div>
+          <ol class="references">
+            <li>Waters, J. C. (2009). Accuracy and precision in quantitative fluorescence microscopy. The Journal of Cell Biology, 185(7), 1135–1148. https://doi.org/10.1083/jcb.200903097
+            </li>
+            <li>Golcz (https://math.stackexchange.com/users/42957/rafal-golcz), R. (n.d.). Why use a Kalman filter instead of keeping a running average. Retrieved from https://math.stackexchange.com/q/206817
+            </li>
+            <li>Li (https://math.stackexchange.com/users/171352/wangyan-li), W. (n.d.). Why use a Kalman filter instead of keeping a running average. Retrieved from https://math.stackexchange.com/q/1137342
+            </li>
+          </ol>
         </div>
         <!------------------------END DEMONSTRATE------------------------>
           <!------------------------FOOTER------------------------>

@@ -730,9 +730,16 @@ section.content-wrapper {
 
 
 /**********-----------Wiki - SPONSORS-----------**********/
+.left-align {
+  text-align: left;
+}
+
 .sponsors {
   font-family: 'Crimson Text', serif;
   margin-bottom: 100px;
+  font-size: 17px;
+  line-height: normal;
+  color: rgba(7,7,7,0.7);
 }
 
 .sponsors-title {
@@ -746,25 +753,14 @@ section.content-wrapper {
   padding-bottom: 40px;
 }
 
-.sponsor-sqr-circ-icon {
-  height: 200px;
-  width: auto;
+.sponsor-wrapper .image-wrapper img {
+  height: 120px;
 }
 
-.sponsor-icon {
-  width: 100%;
+.sponsor-content-wrapper {
+  margin-left: 80px;
 }
 
-.sponsor-icon, .sponsor-sqr-circ-icon {
-  display: block;
-  margin: auto;
-}
-
-.sponsor-info-wrapper p {
-  font-size: 17px;
-  line-height: normal;
-  color: rgba(7,7,7,0.7);
-}
 /**********-----------Wiki - END SPONSORS-----------**********/
 
 /**********-----------Wiki - STANDARD PAGE-----------**********/
@@ -1132,6 +1128,13 @@ font-family: 'Crimson Text', serif;
 }
 
 /**********-----------Wiki - END PUBLIC ENGAGEMENT-----------**********/
+/**********-----------Wiki - WET LAB-----------**********/
+.banner-photo-demonstrate {
+  background: url("http://2017.igem.org/wiki/images/0/08/T--Cornell--WetLab_Banner_Pipettes.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+/**********-----------Wiki - END WET LAB-----------**********/
 /**********-----------Wiki - FOOTER-----------**********/
 .footerTitle {
     margin-top: 10px;
